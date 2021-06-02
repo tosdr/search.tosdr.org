@@ -33,7 +33,7 @@ def proxify(url):
                                            hashlib.sha256).hexdigest()
 
     return '{0}?{1}'.format(settings['result_proxy']['url'],
-                            urllib.urlencode(url_params))
+                            urllib.parse.urlencode(url_params))
 
 # required answerer function
 # can return a list of results (any result type) for a given query
