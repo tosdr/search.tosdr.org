@@ -17,7 +17,7 @@ along with searx. If not, see < http://www.gnu.org/licenses/ >.
 '''
 
 # version of searx
-VERSION_MAJOR = 1
+VERSION_MAJOR = 2
 VERSION_MINOR = 0
 VERSION_BUILD = 0
 
