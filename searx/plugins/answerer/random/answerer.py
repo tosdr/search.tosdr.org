@@ -63,3 +63,8 @@ def answer(query):
     return {
         'answer': random_types[parts[1]]()
     }
+
+def self_info():
+    return {'name': gettext('Random value generator'),
+            'description': gettext('Generate different random values'),
+            'examples': ['random {}'.format(x) for x in random_types]}

@@ -93,7 +93,7 @@ from searx.autocomplete import search_autocomplete, backends as autocomplete_bac
 from searx.plugins import plugins
 from searx.plugins.oa_doi_rewrite import get_doi_resolver
 from searx.preferences import Preferences, ValidationException, LANGUAGE_CODES
-from searx.answerers import answerers
+from searx.plugins.better_answerer import answerers
 from searx.network import stream as http_stream
 from searx.answerers import ask
 from searx.metrology.error_recorder import errors_per_engines
@@ -891,7 +891,7 @@ def preferences():
                   image_proxy=image_proxy,
                   engines_by_category=engines_by_category,
                   stats=stats,
-                  answerers=[{'info': a.self_info(), 'keywords': a.keywords} for a in answerers],
+                  answerers=[{'info': a['module'].self_info(), 'author': a['module'].author} for a in answerers],
                   disabled_engines=disabled_engines,
                   autocomplete_backends=autocomplete_backends,
                   shortcuts={y: x for x, y in engine_shortcuts.items()},

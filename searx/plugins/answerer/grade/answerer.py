@@ -114,3 +114,9 @@ def search_service(query):
                 return api["parameters"]["services"][0]
             return []
         return []
+
+
+def self_info():
+    return {'name': gettext('ToS;DR Grade'),
+            'description': gettext('Get a grade from ToS;DR'),
+            'examples': ['grade Facebook']}

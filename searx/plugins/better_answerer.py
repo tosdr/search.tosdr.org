@@ -33,6 +33,7 @@ def load_answerers():
             'name': filename
         }
         answerers.append(moduleObj)
+    print(answerers)
     return answerers
 
 

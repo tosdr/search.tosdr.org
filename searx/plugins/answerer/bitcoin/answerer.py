@@ -83,3 +83,9 @@ def lookup_currency(currency):
             return api
     except:
         return False
+
+
+def self_info():
+    return {'name': gettext('Bitcoin Index'),
+            'description': gettext('Get a the bitcoin index via currency or by default via USD, EUR and GBP'),
+            'examples': ['bitcoin EUR', 'bitcoin']}
