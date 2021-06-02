@@ -10,6 +10,10 @@ keywords = ('min',
             'sum',
             'prod')
 
+author = {
+    'name': 'Searx Core',
+    'url': "https://github.com/searx/searx"
+}
 
 # required answerer function
 # can return a list of results (any result type) for a given query

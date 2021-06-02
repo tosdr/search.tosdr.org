@@ -11,6 +11,10 @@ keywords = ('random',)
 random_int_max = 2**31
 random_string_letters = string.ascii_lowercase + string.digits + string.ascii_uppercase
 
+author = {
+    'name': 'Searx Core',
+    'url': "https://github.com/searx/searx"
+}
 
 def random_characters():
     return [random.choice(random_string_letters)
