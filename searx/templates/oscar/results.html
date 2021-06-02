@@ -141,9 +141,17 @@
                         {% endif %}
 
                         {% if answer.url %}
-                            <a href="{{ answer.url }}">{{ answer.answer }}</a>
+                            {% if answer.safe %}
+                                <a href="{{ answer.url }}">{{ answer.answer|safe }}</a>
+                            {% else %}
+                                <a href="{{ answer.url }}">{{ answer.answer }}</a>
+                            {% endif %}
                         {% else %}
-                            <span>{{ answer.answer }}</span>
+                            {% if answer.safe %}
+                                <span>{{ answer.answer|safe }}</span>
+                            {% else %}
+                                <span>{{ answer.answer }}</span>
+                            {% endif %}
                         {% endif %}
 
                         {% if answer.author %}
@@ -164,6 +172,9 @@
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
+
+
+
 
 
 
