@@ -17,6 +17,8 @@ setup.cfg
 *~
 *.swp
 
+__pycache__
+
 /node_modules
 
 .tx/
@@ -26,3 +28,4 @@ dist/
 local/
 gh-pages/
 searx.egg-info/
+.idea

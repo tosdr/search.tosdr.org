@@ -1,3 +1,0 @@
-[submodule "searx/answerers"]
-	path = searx/answerers
-	url = git@bitbucket.org:tosdr/instant-answers.git
