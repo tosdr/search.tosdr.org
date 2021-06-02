@@ -131,6 +131,14 @@
             {% if answers -%}
                 {%- for answer in answers.values() %}
                     <div class="result well">
+                        {% if answer.image and answer.image.src %}
+                            {% if answer.image.align == 'right' or answer.image.align == 'left' or not answer.image.align %}
+                                <img src="{{ answer.image.src }}" class="pull-{{ answer.image.align|default('left') }}">
+                                {% if answer.image.align == 'left' %}
+                                    <br><br>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
 
                         {% if answer.url %}
                             <a href="{{ answer.url }}">{{ answer.answer }}</a>
@@ -156,6 +164,9 @@
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
+
+
+
 
 
 

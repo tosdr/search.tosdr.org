@@ -1,3 +1,5 @@
+import hashlib
+import hmac
 import json
 import urllib.parse
 
@@ -5,11 +7,9 @@ from urllib.request import Request, urlopen
 
 from flask_babel import gettext
 
-#import searx.search
-#from searx.search import EngineRef, SearchQuery
 
-# required answerer attribute
-# specifies which search query keywords triggers this answerer
+from searx import settings
+
 keywords = ('grade', 'privacy')
 
 
@@ -17,6 +17,23 @@ author = {
     'name': 'The ToS;DR Team',
     'url': "https://tosdr.org"
 }
+
+def proxify(url):
+    if url.startswith('//'):
+        url = 'https:' + url
+
+    if not settings.get('result_proxy'):
+        return url
+
+    url_params = dict(mortyurl=url.encode())
+
+    if settings['result_proxy'].get('key'):
+        url_params['mortyhash'] = hmac.new(settings['result_proxy']['key'],
+                                           url.encode(),
+                                           hashlib.sha256).hexdigest()
+
+    return '{0}?{1}'.format(settings['result_proxy']['url'],
+                            urllib.urlencode(url_params))
 
 # required answerer function
 # can return a list of results (any result type) for a given query
@@ -39,7 +56,13 @@ def answer(query):
     if len(search_result) > 0:
         return [{
             'answer': gettext('{service} has a {grade} on ToS;DR'.format(service=search_result['name'], grade=search_result['rating']['human'])),
-            'url': search_result['links']['crisp']['service']
+            'url': search_result['links']['crisp']['service'],
+            'image': {
+                'src': proxify(search_result['links']['crisp']['badge']['svg']),
+                'width': '202',
+                'height': '20',
+                'align': 'right'
+            }
         }]
 
 
