@@ -11,7 +11,7 @@ from flask_babel import gettext
 
 from searx import settings
 
-keywords = ('(.*)(bitcoin|btc|BTC) (.{3})(.*)', '(.*)(bitcoin|btc|BTC)(.*)')
+keywords = ('(bitcoin|btc|BTC) (.{3})(.*)', '(bitcoin|btc|BTC)(.*)')
 
 author = {
     'name': 'Justin Back',

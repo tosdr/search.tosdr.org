@@ -11,7 +11,7 @@ from flask_babel import gettext
 
 from searx import settings
 
-keywords = ('(.*)(leet speak|leetspeak) (.*)',)
+keywords = ('(leet speak|leetspeak) (.*)',)
 
 author = {
     'name': 'J |_| 5 \'][\' 1 |\| B /-\ ( |<',
