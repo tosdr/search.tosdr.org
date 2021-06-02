@@ -140,6 +140,32 @@
                             {% endif %}
                         {% endif %}
 
+                        {% if answer.link %}
+                            {% if answer.link.url %}
+                                <small class="pull-right">
+                                    {% if answer.link.icon %}
+                                        <i class="fas fa-{{ answer.link.icon }}"></i>
+                                    {% endif %}
+                                    <a
+                                            target="{{ answer.link.target|default('_blank') }}"
+                                            href="{{ answer.link.url }}">{{ answer.link.text|default('Missing Text') }}</a></small>
+                            {% endif %}
+                        {% endif %}
+                        {% if answer.button %}
+                            {% if not answer.button.position or answer.button.position == 'top-right' %}
+                                {% if answer.button.url %}
+                                    <a href="{{ answer.button.url }}"
+                                       target="{{ answer.button.target|default('_blank') }}"
+                                       class="pull-right btn btn-{{ answer.button.color|default('primary') }}">
+                                        {% if answer.button.icon %}
+                                            <i class="fas fa-{{ answer.button.icon }}"></i>
+                                        {% endif %}
+                                        {{ answer.button.text|default('Missing Text') }}
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+
                         {% if answer.url %}
                             {% if answer.safe %}
                                 <a href="{{ answer.url }}">{{ answer.answer|safe }}</a>
@@ -154,9 +180,38 @@
                             {% endif %}
                         {% endif %}
 
+
+                        {% if answer.button %}
+                            {% if answer.button.position == 'bottom-right' %}
+                                {% if answer.button.url %}
+                                    <a href="{{ answer.button.url }}"
+                                       target="{{ answer.button.target|default('_blank') }}"
+                                       class="pull-right btn btn-{{ answer.button.color|default('primary') }}">
+                                        {% if answer.button.icon %}
+                                            <i class="fas fa-{{ answer.button.icon }}"></i>
+                                        {% endif %}
+                                        {{ answer.button.text|default('Missing Text') }}
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                            {% if answer.button.position == 'bottom' %}
+                                {% if answer.button.url %}
+                                    <br><br>
+                                    <a target="{{ answer.button.target|default('_blank') }}"
+                                       href="{{ answer.button.url }}"
+                                       class="btn btn-{{ answer.button.color|default('primary') }} btn-block">
+                                        {% if answer.button.icon %}
+                                            <i class="fas fa-{{ answer.button.icon }}"></i>
+                                        {% endif %}
+                                        {{ answer.button.text|default('Missing Text') }}
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+
                         {% if answer.author %}
                             {% if answer.author.url %}
-                                <br><br>
+                                <br>
                                 <small>
                                     <a target="_blank" href="{{ answer.author.url }}"><i class="fas fa-fighter-jet"></i>
                                         - Answerer made
@@ -182,6 +237,15 @@
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
+
+
+
+
+
+
+
+
+
 
 
 
