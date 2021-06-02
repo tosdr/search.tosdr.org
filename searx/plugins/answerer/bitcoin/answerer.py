@@ -48,8 +48,8 @@ def answer(query):
         return {
             'answer': '<b>The current Bitcoin index is:</b><br><br><b>USD:</b> {usd}<br><b>EUR:</b> {eur}<br><b>GBP:</b> {gbp}<br><small>{disclaimer}</small>'.format(
                 usd=html.escape('$' + str((api['bpi']['USD']['rate_float']))),
-                eur=html.escape(str(api['bpi']['EUR']['rate_float']) + '€'),
-                gbp=html.escape(str(api['bpi']['USD']['rate_float']) + '£'),
+                eur=html.escape(str(api['bpi']['EUR']['rate_float']) + 'â‚¬'),
+                gbp=html.escape(str(api['bpi']['USD']['rate_float']) + 'Â£'),
                 disclaimer=html.escape(str((api['disclaimer']))),
             ),
             'safe': True

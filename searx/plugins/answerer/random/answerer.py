@@ -12,7 +12,7 @@ random_int_max = 2 ** 31
 random_string_letters = string.ascii_lowercase + string.digits + string.ascii_uppercase
 
 author = {
-    'name': 'Searx Core',
+    'name': 'Searx Core and improved by Justin Back',
     'url': "https://github.com/searx/searx"
 }
 
@@ -29,8 +29,25 @@ def random_string():
 def random_float():
     return str(random.random())
 
+
 def random_mac():
-    return
+    _valid_char = "0123456789ABCDEF"
+    _valid_bcast_char = "02468ACE"
+
+    def _gen_rand_bytes(bytes_needed):
+        out_bytes = []
+        for i in range(bytes_needed):
+            rand_byte = random.choice(_valid_char) + random.choice(_valid_char)
+            out_bytes.append(rand_byte)
+        out_bytes = ":".join(out_bytes)
+        return out_bytes
+
+    first_byte = random.choice(_valid_char) + random.choice(_valid_bcast_char)
+
+    five_bytes = _gen_rand_bytes(5)
+    out_mac = first_byte + ":" + five_bytes
+    return str(out_mac)
+
 
 def random_int():
     return str(random.randint(-random_int_max, random_int_max))
@@ -51,6 +68,7 @@ random_types = {'string': random_string,
                 'integer': random_int,
                 'float': random_float,
                 'sha256': random_sha256,
+                'mac': random_mac,
                 'uuid': random_uuid}
 
 
@@ -65,6 +83,7 @@ def answer(query):
     return {
         'answer': random_types[parts[1]]()
     }
+
 
 def self_info():
     return {'name': gettext('Random value generator'),
