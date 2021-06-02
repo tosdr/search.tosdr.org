@@ -8,13 +8,14 @@ from flask_babel import gettext
 # specifies which search query keywords triggers this answerer
 keywords = ('random',)
 
-random_int_max = 2**31
+random_int_max = 2 ** 31
 random_string_letters = string.ascii_lowercase + string.digits + string.ascii_uppercase
 
 author = {
     'name': 'Searx Core',
     'url': "https://github.com/searx/searx"
 }
+
 
 def random_characters():
     return [random.choice(random_string_letters)
@@ -45,27 +46,20 @@ def random_uuid():
 
 random_types = {'string': random_string,
                 'int': random_int,
+                'integer': random_int,
                 'float': random_float,
                 'sha256': random_sha256,
                 'uuid': random_uuid}
 
 
-# required answerer function
-# can return a list of results (any result type) for a given query
 def answer(query):
-    parts = query.query.split()
+    parts = query.split()
     if len(parts) != 2:
         return []
 
     if parts[1] not in random_types:
         return []
 
-    return [{'answer': random_types[parts[1]]()}]
-
-
-# required answerer function
-# returns information about the answerer
-def self_info():
-    return {'name': gettext('Random value generator'),
-            'description': gettext('Generate different random values'),
-            'examples': ['random {}'.format(x) for x in random_types]}
+    return {
+        'answer': random_types[parts[1]]()
+    }
