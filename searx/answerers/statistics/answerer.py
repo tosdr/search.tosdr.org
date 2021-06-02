@@ -32,15 +32,15 @@ def answer(query):
     answer = None
 
     if func == 'min':
-        answer = min(args)
+        answer = 'The minimum is: ' + str(min(args))
     elif func == 'max':
-        answer = max(args)
+        answer = 'The Maximum is: ' + str(max(args))
     elif func == 'avg':
-        answer = sum(args) / len(args)
+        answer = 'The Average is: ' + str(sum(args) / len(args))
     elif func == 'sum':
-        answer = sum(args)
+        answer = 'The sum is: ' + str(sum(args))
     elif func == 'prod':
-        answer = reduce(mul, args, 1)
+        answer = 'The folded value is: ' + str(reduce(mul, args, 1))
 
     if answer is None:
         return []
