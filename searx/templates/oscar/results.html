@@ -167,13 +167,13 @@
                                 <small><i class="fas fa-fighter-jet"></i> - Answerer made by {{ answer.author.name }}
                                 </small>
                             {% endif %}
-                        {% endif %}
 
-                        {% if answer.author.bugs %}
-                            {% if answer.author.bugs.url %}
-                                <small class="pull-right">
-                                    <i class="fas fa-bug"></i> <a target="_blank"
-                                                                  href="{{ answer.author.bugs.url }}">{{ answer.author.bugs.text|default('Issue Tracker') }}</a></small>
+                            {% if answer.author.bugs %}
+                                {% if answer.author.bugs.url %}
+                                    <small class="pull-right">
+                                        <i class="fas fa-bug"></i> <a target="_blank"
+                                                                      href="{{ answer.author.bugs.url }}">{{ answer.author.bugs.text|default('Issue Tracker') }}</a></small>
+                                {% endif %}
                             {% endif %}
                         {% endif %}
                     </div>
@@ -182,6 +182,7 @@
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
+
 
 
 

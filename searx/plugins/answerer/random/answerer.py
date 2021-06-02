@@ -29,6 +29,8 @@ def random_string():
 def random_float():
     return str(random.random())
 
+def random_mac():
+    return
 
 def random_int():
     return str(random.randint(-random_int_max, random_int_max))
