@@ -35,7 +35,8 @@ from searx.plugins import (oa_doi_rewrite,
                            hostname_replace,
                            search_on_category_select,
                            tracker_url_remover,
-                           vim_hotkeys)
+                           vim_hotkeys,
+                           better_answerer)
 
 required_attrs = (('name', str),
                   ('description', str),
@@ -173,6 +174,7 @@ plugins.register(hostname_replace)
 plugins.register(search_on_category_select)
 plugins.register(tracker_url_remover)
 plugins.register(vim_hotkeys)
+plugins.register(better_answerer)
 # load external plugins
 if 'plugins' in settings:
     plugins.register(*settings['plugins'], external=True)

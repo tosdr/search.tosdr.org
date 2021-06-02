@@ -158,12 +158,22 @@
                             {% if answer.author.url %}
                                 <br><br>
                                 <small>
-                                    <a target="_blank" href="{{ answer.author.url }}">- Answerer made
+                                    <a target="_blank" href="{{ answer.author.url }}"><i class="fas fa-fighter-jet"></i>
+                                        - Answerer made
                                         by {{ answer.author.name }}</a>
                                 </small>
                             {% else %}
                                 <br><br>
-                                <small>- Answerer made by {{ answer.author.name }}</small>
+                                <small><i class="fas fa-fighter-jet"></i> - Answerer made by {{ answer.author.name }}
+                                </small>
+                            {% endif %}
+                        {% endif %}
+
+                        {% if answer.author.bugs %}
+                            {% if answer.author.bugs.url %}
+                                <small class="pull-right">
+                                    <i class="fas fa-bug"></i> <a target="_blank"
+                                                                  href="{{ answer.author.bugs.url }}">{{ answer.author.bugs.text|default('Issue Tracker') }}</a></small>
                             {% endif %}
                         {% endif %}
                     </div>
@@ -172,6 +182,13 @@
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
+
+
+
+
+
+
+
 
 
 
