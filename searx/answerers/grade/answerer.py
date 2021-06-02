@@ -12,6 +12,12 @@ from flask_babel import gettext
 # specifies which search query keywords triggers this answerer
 keywords = ('grade', 'privacy')
 
+
+author = {
+    'name': 'The ToS;DR Team',
+    'url': "https://tosdr.org"
+}
+
 # required answerer function
 # can return a list of results (any result type) for a given query
 def answer(query):
@@ -31,13 +37,15 @@ def answer(query):
 
 
     if len(search_result) > 0:
-        return [{'answer': gettext('{service} has a {grade} on ToS;DR'.format(
-        service=search_result['name'],
-        grade=search_result['rating']['human']
-        ))}]
+        return [{
+            'answer': gettext('{service} has a {grade} on ToS;DR'.format(service=search_result['name'], grade=search_result['rating']['human'])),
+            'url': search_result['links']['crisp']['service']
+        }]
 
 
-    return [{'answer': gettext('No Service on ToS;DR Found with the Query "{service}"'.format(service=service))}]
+    return [{
+        'answer': gettext('No Service on ToS;DR Found with the Query "{service}"'.format(service=service)),
+    }]
 
 
 # required answerer function

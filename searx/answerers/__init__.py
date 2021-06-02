@@ -22,23 +22,29 @@ def load_answerers():
 def get_answerers_by_keywords(answerers):
     by_keyword = defaultdict(list)
     for answerer in answerers:
-        for keyword in answerer.keywords:
+        for _ in answerer.keywords:
             for keyword in answerer.keywords:
-                by_keyword[keyword].append(answerer.answer)
+                by_keyword[keyword].append(answerer)
     return by_keyword
 
 
 def ask(query):
     results = []
+
+
     query_parts = list(filter(None, query.query.split()))
 
     if not query_parts or query_parts[0] not in answerers_by_keywords:
         return results
 
     for answerer in answerers_by_keywords[query_parts[0]]:
-        result = answerer(query)
+        result = answerer.answer(query)
+
         if result:
+            result[0]['author'] = answerer.author
+
             results.append(result)
+
     return results
 
 

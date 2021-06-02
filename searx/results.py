@@ -165,6 +165,8 @@ class ResultContainer:
     def extend(self, engine_name, results):
         standard_result_count = 0
         error_msgs = set()
+
+
         for result in list(results):
             result['engine'] = engine_name
             if 'suggestion' in result:
