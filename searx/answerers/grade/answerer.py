@@ -58,7 +58,7 @@ def answer(query):
             'answer': gettext('{service} has a {grade} on ToS;DR'.format(service=search_result['name'], grade=search_result['rating']['human'])),
             'url': search_result['links']['crisp']['service'],
             'image': {
-                'src': proxify(search_result['links']['crisp']['badge']['svg']),
+                'src': proxify(search_result['links']['crisp']['badge']['png']),
                 'width': '202',
                 'height': '20',
                 'align': 'right'
