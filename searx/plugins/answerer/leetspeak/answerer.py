@@ -21,7 +21,7 @@ author = [{
 
 def answer(query):
     if re.match(keywords[0], query):
-        leet = re.match(keywords[0], query).group(3)
+        leet = re.match(keywords[0], query).group(2)
 
         leetCharSet = {
             'a': '/-\\',
