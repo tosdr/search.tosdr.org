@@ -13,10 +13,10 @@ from searx import settings
 
 keywords = ('(bitcoin|btc|BTC) (.{3})(.*)', '(bitcoin|btc|BTC)(.*)')
 
-author = {
+author = [{
     'name': 'Justin Back',
     'url': "https://github.com/JustinBack"
-}
+}]
 
 
 def answer(query):
@@ -88,4 +88,6 @@ def lookup_currency(currency):
 def self_info():
     return {'name': gettext('Bitcoin Index'),
             'description': gettext('Get a the bitcoin index via currency or by default via USD, EUR and GBP'),
-            'examples': ['bitcoin EUR', 'bitcoin']}
+            'examples': ['bitcoin EUR', 'bitcoin'],
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/bitcoin/answerer.py',
+            'website': 'https://tosdr.org'}

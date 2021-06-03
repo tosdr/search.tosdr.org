@@ -11,10 +11,13 @@ keywords = ('random',)
 random_int_max = 2 ** 31
 random_string_letters = string.ascii_lowercase + string.digits + string.ascii_uppercase
 
-author = {
-    'name': 'Searx Core and improved by Justin Back',
+author = [{
+    'name': 'Searx Core',
     'url': "https://github.com/searx/searx"
-}
+},{
+    'name': 'Justin Back',
+    'url': "https://github.com/JustinBack"
+}]
 
 
 def random_characters():
@@ -69,13 +72,15 @@ random_types = {'string': random_string,
                 'float': random_float,
                 'sha256': random_sha256,
                 'mac': random_mac,
+                'mac address': random_mac,
                 'uuid': random_uuid}
 
 
 def answer(query):
     parts = query.split()
-    if len(parts) != 2:
+    if len(parts) < 2:
         return []
+
 
     if parts[1] not in random_types:
         return []
@@ -88,4 +93,6 @@ def answer(query):
 def self_info():
     return {'name': gettext('Random value generator'),
             'description': gettext('Generate different random values'),
-            'examples': ['random {}'.format(x) for x in random_types]}
+            'examples': ['random {}'.format(x) for x in random_types],
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/random/answerer.py',
+            'website': 'https://tosdr.org'}

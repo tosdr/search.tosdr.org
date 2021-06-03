@@ -378,10 +378,30 @@
                                 <tr>
                                     <td>{{ answerer.info.name }}</td>
                                     <td>
-                                        {% if answerer.author.url %}
-                                            <a target="_blank" href="{{ answerer.author.url }}">{{ answerer.author.name }}</a>
+                                        {% if answerer.author is sequence and answerer.author is not string and answerer.author is not mapping %}
+                                            {% for Developer in answerer.author %}
+                                                <p>
+                                                    {% if Developer.url %}
+                                                        <p><a
+                                                                target="_blank"
+                                                                href="{{ Developer.url }}">{{ Developer.name }}</a>
+                                                        </p>
+                                                    {% else %}
+                                                        <p>{{ Developer.name }}</p>
+                                                    {% endif %}
+                                                </p>
+                                            {% endfor %}
                                         {% else %}
-                                            {{ answerer.author.name }}
+                                            <p>
+                                                {% if answerer.author.url %}
+                                                    <p><a
+                                                            target="_blank"
+                                                            href="{{ answerer.author.url }}">{{ answerer.author.name }}</a>
+                                                    </p>
+                                                {% else %}
+                                                    <p>{{ answerer.author.name }}</p>
+                                                {% endif %}
+                                            </p>
                                         {% endif %}
                                     </td>
                                     <td>{{ answerer.info.description }}</td>

@@ -130,7 +130,97 @@
 
             {% if answers -%}
                 {%- for answer in answers.values() %}
+
                     <div class="result well">
+                        {% if answer.author %}
+                            <button title="Answerer Info" type="button" class="btn btn-info btn-xs pull-right"
+                                    data-toggle="modal"
+                                    data-target="#answerer-modal-{{ loop.index }}">
+                                <i class="fas fa-fighter-jet"></i>
+                            </button>
+
+
+                            <!-- The modal -->
+                            <div class="modal fade" id="answerer-modal-{{ loop.index }}" tabindex="-1" role="dialog"
+                                 aria-labelledby="modalLabelSmall" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="modalLabelSmall"><i title="Answerer"
+                                                    class="fas fa-fighter-jet"></i> {{ answer.info.name }}</h4>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                {{ answer.info.description|default('No Description provided by the developer') }}
+                                            </p>
+
+                                            {% if answer.info.bugs and answer.info.bugs.url %}
+                                                <p>
+                                                    <small>
+                                                        <i class="fas fa-bug"></i> <a target="_blank"
+                                                                                      href="{{ answer.info.bugs.url }}">{{ answer.info.bugs.text|default('Issue Tracker') }}</a></small>
+
+
+                                                </p>
+                                            {% endif %}
+                                            {% if answer.info.repository %}
+                                                <p>
+                                                    <small>
+                                                        <i class="fas fa-code-branch"></i> <a target="_blank"
+                                                                                              href="{{ answer.info.repository }}">Source
+                                                        Code</a></small>
+                                                </p>
+                                            {% endif %}
+                                            {% if answer.info.website %}
+                                                <p>
+                                                    <small>
+                                                        <i class="fas fa-globe"></i> <a target="_blank"
+                                                                                              href="{{ answer.info.website }}">Website</a></small>
+                                                </p>
+                                            {% endif %}
+                                            <hr>
+                                            {% if answer.author is sequence and answer.author is not string and answer.author is not mapping %}
+                                                {% for Developer in answer.author %}
+                                                    <p>
+                                                        {% if Developer.url %}
+                                                            <p>{{ Developer.title|default('Developer') }}: <a
+                                                                    target="_blank"
+                                                                    href="{{ Developer.url }}">{{ Developer.name }}</a>
+                                                            </p>
+                                                        {% else %}
+                                                            <p>{{ Developer.title|default('Developer') }}:
+                                                                {{ Developer.name }}</p>
+                                                        {% endif %}
+                                                    </p>
+                                                {% endfor %}
+                                            {% else %}
+                                                <p>
+                                                    {% if answer.author.url %}
+                                                        <p>{{ answer.author.title|default('Developer') }}: <a
+                                                                target="_blank"
+                                                                href="{{ answer.author.url }}">{{ answer.author.name }}</a>
+                                                        </p>
+                                                    {% else %}
+                                                        <p>{{ answer.author.title|default('Developer') }}:
+                                                            {{ answer.author.name }}</p>
+                                                    {% endif %}
+                                                </p>
+                                            {% endif %}
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        {% endif %}
+
+
                         {% if answer.image and answer.image.src %}
                             {% if answer.image.align == 'right' or answer.image.align == 'left' or not answer.image.align %}
                                 <img src="{{ answer.image.src }}" class="pull-{{ answer.image.align|default('left') }}">
@@ -208,59 +298,12 @@
                                 {% endif %}
                             {% endif %}
                         {% endif %}
-
-                        {% if answer.author %}
-                            {% if answer.author.url %}
-                                <br>
-                                <small>
-                                    <a target="_blank" href="{{ answer.author.url }}"><i class="fas fa-fighter-jet"></i>
-                                        - Answerer made
-                                        by {{ answer.author.name }}</a>
-                                </small>
-                            {% else %}
-                                <br><br>
-                                <small><i class="fas fa-fighter-jet"></i> - Answerer made by {{ answer.author.name }}
-                                </small>
-                            {% endif %}
-
-                            {% if answer.author.bugs %}
-                                {% if answer.author.bugs.url %}
-                                    <small class="pull-right">
-                                        <i class="fas fa-bug"></i> <a target="_blank"
-                                                                      href="{{ answer.author.bugs.url }}">{{ answer.author.bugs.text|default('Issue Tracker') }}</a></small>
-                                {% endif %}
-                            {% endif %}
-                        {% endif %}
                     </div>
                 {%- endfor %}
             {%- endif %}
 
             {% for result in results -%}
                 <div class="result {% if result['template'] %}result-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                     {{ result.template|replace('.html', '') }}{% else %}result-default{% endif %}{% for e in result.engines %} {{ e }}{% endfor %}">

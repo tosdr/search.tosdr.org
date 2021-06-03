@@ -13,14 +13,17 @@ from searx import settings
 
 keywords = ('(md5|sha256|sha512|md4|sha1) (.*)',)
 
-author = {
+author = [{
     'name': 'Justin Back',
     'url': "https://github.com/JustinBack"
-}
+}, {
+    'name': 'Searx',
+    'url': "https://github.com/searx",
+    'title': 'Original Code'
+}]
 
 
 def answer(query):
-
     algo = re.match(keywords[0], query).group(1)
     string = re.match(keywords[0], query).group(2)
 
@@ -38,7 +41,7 @@ def answer(query):
         hash = 'Unable to calculate hash, {algo} is an unsupported algorithm'.format(algo=algo)
 
     return {
-        'answer': '{algo} digested hex hash: {hash} '.format(hash=hash,algo=algo)
+        'answer': '{algo} digested hex hash: {hash} '.format(hash=hash, algo=algo)
     }
 
 
@@ -65,4 +68,7 @@ def md4(string):
 def self_info():
     return {'name': gettext('Hash Generator'),
             'description': gettext('Generate md4, md5, sha1, sha256 and sha512 hashes'),
-            'examples': ['sha256 My String']}
+            'examples': ['sha256 My String'],
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/hash/answerer.py',
+            'website': 'https://tosdr.org'
+            }

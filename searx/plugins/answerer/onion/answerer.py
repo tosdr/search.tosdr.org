@@ -13,10 +13,10 @@ from searx import settings
 
 keywords = ('^https?\:\/\/([\w\-\.]+\.onion)(.*)',)
 
-author = {
+author = [{
     'name': 'Justin Back',
     'url': "https://github.com/JustinBack",
-}
+}]
 
 
 def answer(query):
@@ -39,4 +39,7 @@ def answer(query):
 def self_info():
     return {'name': gettext('Onion Notice'),
             'description': gettext('Give a notice if an onion address has been queried'),
-            'examples': ['http://6tc72lnilgt4dn2u6qk44vfns2qca552smajbilfcl6zs7ezf7emhbad.onion']}
+            'examples': ['http://6tc72lnilgt4dn2u6qk44vfns2qca552smajbilfcl6zs7ezf7emhbad.onion'],
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/onion/answerer.py',
+            'website': 'https://tosdr.org'
+            }

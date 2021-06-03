@@ -19,14 +19,10 @@ keywords = (
     '(.*)(is) (.+) (secure|private|safe)(.*)'
 )
 
-author = {
+author = [{
     'name': 'The ToS;DR Team',
     'url': "https://tosdr.org",
-    'bugs': {
-        'url': 'https://tosdr.atlassian.net/browse/TDS',
-        'text': 'Report a bug to the maintainer'
-    }
-}
+}]
 
 
 def proxify(url):
@@ -76,7 +72,6 @@ def answer(query):
                 except:
                     return False
 
-
     if not matches:
         return False
 
@@ -85,7 +80,8 @@ def answer(query):
     if len(search_result) > 0:
         return {
             'answer': gettext('{service} has a Privacy {grade} on ToS;DR'.format(service=search_result['name'],
-                                                                         grade=search_result['rating']['human'])),
+                                                                                 grade=search_result['rating'][
+                                                                                     'human'])),
             'url': search_result['links']['crisp']['service'],
             'image': {
                 'src': proxify(search_result['links']['crisp']['badge']['png']),
@@ -118,5 +114,12 @@ def search_service(query):
 
 def self_info():
     return {'name': gettext('ToS;DR Grade'),
-            'description': gettext('Get a grade from ToS;DR'),
-            'examples': ['grade Facebook']}
+            'description': gettext('Get a grade from ToS;DR using the ToS;DR API'),
+            'examples': ['grade Facebook'],
+            'bugs': {
+                'url': 'https://tosdr.atlassian.net/browse/TDS',
+                'text': 'Report a bug to the maintainer'
+            },
+            'website': 'https://tosdr.org',
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/grade/answerer.py'
+            }

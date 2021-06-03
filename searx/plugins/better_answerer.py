@@ -24,7 +24,7 @@ def load_answerers():
             continue
         module = load_module('answerer.py', join(answerers_dir, filename))
         if not hasattr(module, 'keywords') or not isinstance(module.keywords, tuple) or not len(
-                module.keywords) or not hasattr(module, 'author') or not isinstance(module.author, dict):
+                module.keywords) or not hasattr(module, 'author'):
             print("Failed to load module {mod}".format(mod=filename))
             exit(99)
 
@@ -72,6 +72,7 @@ def post_search(request, search):
 
         if result:
             result['author'] = answerer['module'].author
+            result['info'] = answerer['module'].self_info()
 
             search.result_container.answers[answerer['name']] = result
 

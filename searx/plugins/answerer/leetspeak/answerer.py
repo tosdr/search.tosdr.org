@@ -13,10 +13,10 @@ from searx import settings
 
 keywords = ('(leet speak|leetspeak) (.*)',)
 
-author = {
+author = [{
     'name': 'J |_| 5 \'][\' 1 |\| B /-\ ( |<',
     'url': "https://github.com/JustinBack"
-}
+}]
 
 
 def answer(query):
@@ -63,4 +63,6 @@ def answer(query):
 def self_info():
     return {'name': gettext('Leetspeak Answerer'),
             'description': gettext('L 3 3 \'][\' 5 |D 3 /-\ |< I 5 C 0 0 |_'),
-            'examples': ['leetspeak Hello']}
+            'examples': ['leetspeak Hello'],
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/leetspeak/answerer.py',
+            'website': 'https://tosdr.org'}

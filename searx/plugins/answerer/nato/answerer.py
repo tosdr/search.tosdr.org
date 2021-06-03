@@ -13,10 +13,10 @@ from searx import settings
 
 keywords = ('(nato) (.*)',)
 
-author = {
+author = [{
     'name': 'Justin Back',
     'url': "https://github.com/JustinBack"
-}
+}]
 
 
 def answer(query):
@@ -63,6 +63,13 @@ def answer(query):
 
 
 def self_info():
-    return {'name': gettext('Nato Converterter'),
+    return {'name': gettext('Nato Converter'),
             'description': gettext('Converts words into the nato phonetic alphabet'),
-            'examples': ['nato Hello']}
+            'examples': ['nato Hello'],
+            'bugs': {
+                'text': 'Issue Tracker',
+                'url': 'https://tosdr.atlassian.net/browse/TDS'
+            },
+            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/nato/answerer.py',
+            'website': 'https://tosdr.org'
+            }
