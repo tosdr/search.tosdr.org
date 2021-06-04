@@ -464,4 +464,20 @@
             </div>
         </form>
     </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+
+            $(window).on('hashchange', function (e) {
+                $('.nav-tabs a[href="' + window.location.hash + '"]').tab('show');
+            });
+
+            if (window.location.hash) {
+                $('.nav-tabs a[href="' + window.location.hash + '"]').tab('show');
+            }
+        })
+    </script>
 {% endblock %}

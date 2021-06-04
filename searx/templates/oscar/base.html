@@ -104,6 +104,8 @@
     {% for script in scripts %}
     {{""}}<script src="{{ url_for('static', filename=script) }}"></script>
     {% endfor %}
+    {% block scripts %}
+    {% endblock %}
     <noscript>
       <style>
         .glyphicon { display: none; }
