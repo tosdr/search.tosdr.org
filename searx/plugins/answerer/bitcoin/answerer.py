@@ -1,17 +1,19 @@
 import hashlib
 import hmac
 import json
+import pathlib
 import re
 import html
 import urllib.parse
 
 from urllib.request import Request, urlopen
 
+import flask
 from flask_babel import gettext
 
 from searx import settings
 
-keywords = ('(bitcoin|btc|BTC) (.{3})(.*)', '(bitcoin|btc|BTC) (.*)')
+keywords = ('(bitcoin|btc|BTC) (.{3})(.*)', '(bitcoin|btc|BTC)')
 
 author = [{
     'name': 'Justin Back',
@@ -29,12 +31,13 @@ def answer(query):
             return False
 
         return {
-            'answer': '<b>The current Bitcoin index is:</b><br><br><b>USD:</b> {usd}<br><b>{currency}:</b> {custom}<br><small>{disclaimer}</small>'.format(
-                usd=html.escape(str((api['bpi']['USD']['rate_float'])) + ' USD'),
-                custom=html.escape(str(api['bpi'][currency]['rate_float']) + ' ' + currency),
-                currency=html.escape(currency),
-                disclaimer=html.escape(str((api['disclaimer']))),
-            ),
+            'answer': flask.render_template_string(loadTemplate('currency'),
+                                                   usd=html.escape(str((api['bpi']['USD']['rate_float'])) + ' USD'),
+                                                   currency_value=html.escape(
+                                                       str(api['bpi'][currency]['rate_float']) + ' ' + currency),
+                                                   currency=html.escape(currency),
+                                                   disclaimer=html.escape(str((api['disclaimer']))),
+                                                   ),
             'safe': True
         }
 
@@ -44,16 +47,20 @@ def answer(query):
         if not api:
             return False
 
-
         return {
-            'answer': '<b>The current Bitcoin index is:</b><br><br><b>USD:</b> {usd}<br><b>EUR:</b> {eur}<br><b>GBP:</b> {gbp}<br><small>{disclaimer}</small>'.format(
-                usd=html.escape('$' + str((api['bpi']['USD']['rate_float']))),
-                eur=html.escape(str(api['bpi']['EUR']['rate_float']) + 'â‚¬'),
-                gbp=html.escape(str(api['bpi']['USD']['rate_float']) + 'Â£'),
-                disclaimer=html.escape(str((api['disclaimer']))),
-            ),
+            'answer': flask.render_template_string(loadTemplate('all'),
+                                                   usd=html.escape('$' + str((api['bpi']['USD']['rate_float']))),
+                                                   eur=html.escape(str(api['bpi']['EUR']['rate_float']) + 'â‚¬'),
+                                                   gbp=html.escape(str(api['bpi']['USD']['rate_float']) + 'Â£'),
+                                                   disclaimer=html.escape(str((api['disclaimer']))),
+                                                   ),
             'safe': True
         }
+
+
+def loadTemplate(name):
+    with open(str(pathlib.Path(__file__).parent.absolute()) + '/templates/' + name + '.html', 'r') as file:
+        return file.read()
 
 
 def lookup_top():
@@ -88,6 +95,6 @@ def lookup_currency(currency):
 def self_info():
     return {'name': gettext('Bitcoin Index'),
             'description': gettext('Get a the bitcoin index via currency or by default via USD, EUR and GBP'),
-            'examples': ['bitcoin EUR', 'bitcoin'],
+            'examples': ['bitcoin EUR', 'bitcoin', 'btc EUR', 'btc'],
             'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/bitcoin/answerer.py',
             'website': 'https://tosdr.org'}
