@@ -1,0 +1,15 @@
+<h4>Privacy friendly alternatives to {{ original|capitalize }}:</h4>
+<ol>
+    {% for alternative in alternatives %}
+        <li>
+            {% if alternative.icon %}
+                <i class="{{ alternative.icon }}"></i>&nbsp;
+            {% endif %}
+            {% if alternative.url %}
+                <a href="{{ alternative.url }}">{{ alternative.name }}</a>
+            {% else %}
+                {{ alternative.name }}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ol>

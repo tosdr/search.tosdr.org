@@ -20,20 +20,22 @@ def load_answerers():
     answerers = []
 
     for filename in listdir(answerers_dir):
-        if not isdir(join(answerers_dir, filename)) or filename.startswith('_'):
-            continue
-        module = load_module('answerer.py', join(answerers_dir, filename))
-        if not hasattr(module, 'keywords') or not isinstance(module.keywords, tuple) or not len(
-                module.keywords) or not hasattr(module, 'author'):
-            print("Failed to load module {mod}".format(mod=filename))
-            exit(99)
+        try:
+            if not isdir(join(answerers_dir, filename)) or filename.startswith('_'):
+                continue
+            module = load_module('answerer.py', join(answerers_dir, filename))
+            if not hasattr(module, 'keywords') or not isinstance(module.keywords, tuple) or not len(
+                    module.keywords) or not hasattr(module, 'author'):
+                print("Failed to load module {mod}".format(mod=filename))
+                exit(99)
 
-        moduleObj = {
-            'module': module,
-            'name': filename
-        }
-        answerers.append(moduleObj)
-    print(answerers)
+            moduleObj = {
+                'module': module,
+                'name': filename
+            }
+            answerers.append(moduleObj)
+        except:
+            print("Module Error!")
     return answerers
 
 
