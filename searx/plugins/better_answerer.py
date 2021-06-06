@@ -33,9 +33,10 @@ def load_answerers():
                 'module': module,
                 'name': filename
             }
+            print("Loaded module {mod}".format(mod=filename))
             answerers.append(moduleObj)
-        except:
-            print("Module Error!")
+        except Exception as Ex:
+            print("Module Error!" + str(Ex))
     return answerers
 
 
