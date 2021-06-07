@@ -394,7 +394,7 @@ class Preferences:
             'oscar-style': EnumStringSetting(
                 settings['ui'].get('theme_args', {}).get('oscar_style', 'logicodev'),
                 is_locked('oscar-style'),
-                choices=['', 'logicodev', 'logicodev-dark', 'pointhi']),
+                choices=['', 'logicodev', 'logicodev-dark']),
             'advanced_search': MapSetting(
                 settings['ui'].get('advanced_search', False),
                 is_locked('advanced_search'),

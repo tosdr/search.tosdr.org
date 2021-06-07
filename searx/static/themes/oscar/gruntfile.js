@@ -91,18 +91,17 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ["src/less/pointhi", "src/less/logicodev", "src/less/logicodev-dark", "src/less/bootstrap"]
+          paths: ["src/less/logicodev", "src/less/logicodev-dark", "src/less/bootstrap"]
         },
         files: {
           "css/bootstrap.css": "src/less/bootstrap/bootstrap.less",
-          "css/pointhi.css": "src/less/pointhi/oscar.less",
           "css/logicodev.css": "src/less/logicodev-dark/oscar.less",
           "css/logicodev-dark.css": "src/less/logicodev/oscar.less"
         }
       },
       production: {
         options: {
-          paths: ["src/less/pointhi", "src/less/logicodev", "src/less/logicodev-dark", "src/less/bootstrap"],
+          paths: ["src/less/logicodev", "src/less/logicodev-dark", "src/less/bootstrap"],
           plugins: [
             new (require('less-plugin-clean-css'))()
           ],
@@ -114,7 +113,6 @@ module.exports = function(grunt) {
         files: {
           "css/bootstrap.min.css": "css/bootstrap.css",
           "css/leaflet.min.css": "css/leaflet.css",
-          "css/pointhi.min.css": "src/less/pointhi/oscar.less",
           "css/logicodev.min.css": "src/less/logicodev/oscar.less",
           "css/logicodev-dark.min.css": "src/less/logicodev-dark/oscar.less"
         }
@@ -126,7 +124,7 @@ module.exports = function(grunt) {
             tasks: ['jshint', 'concat', 'uglify']
         },
         oscar_styles: {
-            files: ['src/less/pointhi/**/*.less'],
+            files: ['src/less/logidodev/**/*.less', 'src/less/logidodev-dark/**/*.less'],
             tasks: ['less:development', 'less:production']
         },
         bootstrap_styles: {

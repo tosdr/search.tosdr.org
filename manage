@@ -93,7 +93,6 @@ test.* :
 themes.* :
   all       : build all themes
   oscar     : build oscar theme
-  simple    : build simple theme
 EOF
 }
 
@@ -298,10 +297,6 @@ node.env() {
         cd "${REPO_ROOT}/searx/static/themes/oscar"
         build_msg INSTALL "($(pwd)) npm install"
         npm install
-
-        build_msg INSTALL "($(pwd)) npm install"
-        cd "${REPO_ROOT}/searx/static/themes/simple"
-        npm install
     )
     err=$?
     popd &> /dev/null
@@ -315,9 +310,7 @@ node.clean() {
        ./node_modules  \
        ./package-lock.json \
        ./searx/static/themes/oscar/package-lock.json \
-       ./searx/static/themes/oscar/node_modules \
-       ./searx/static/themes/simple/package-lock.json \
-       ./searx/static/themes/simple/node_modules
+       ./searx/static/themes/oscar/node_modules
     dump_return $?
 }
 
@@ -450,20 +443,12 @@ themes.all() {
     (   set -e
         node.env
         themes.oscar
-        themes.simple
     )
     dump_return $?
 }
 
 themes.oscar() {
     local gruntfile=searx/static/themes/oscar/gruntfile.js
-    build_msg GRUNT "${gruntfile}"
-    PATH="$(npm bin):$PATH" grunt --gruntfile "${gruntfile}"
-    dump_return $?
-}
-
-themes.simple() {
-    local gruntfile=searx/static/themes/simple/gruntfile.js
     build_msg GRUNT "${gruntfile}"
     PATH="$(npm bin):$PATH" grunt --gruntfile "${gruntfile}"
     dump_return $?
