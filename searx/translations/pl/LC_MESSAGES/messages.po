@@ -1012,3 +1012,6 @@ msgstr "Interfejs użytkownika"
 #: searx/templates/simple/preferences.html:154
 msgid "Privacy"
 msgstr "Prywatność"
+
+msgid "Translate ToS;DR Search"
+msgstr ""
