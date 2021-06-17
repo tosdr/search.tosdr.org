@@ -1102,3 +1102,6 @@ msgstr "Lade..."
 
 msgid "Translate ToS;DR Search"
 msgstr "ToS;DR Search Übersetzen"
+
+msgid "Contact instance maintainer"
+msgstr "Contact instance maintainer"
