@@ -1081,3 +1081,6 @@ msgstr "མི་སྒེར་གསང་དོན།"
 #: searx/templates/simple/result_templates/map.html:35
 msgid "Loading..."
 msgstr ""
+
+msgid "Translate ToS;DR Search"
+msgstr ""
