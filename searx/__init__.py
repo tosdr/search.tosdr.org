@@ -104,5 +104,9 @@ class _brand_namespace:
     def TWITTER_URL(self):
         return self.get_val('brand', 'twitter_url')
 
+    @property
+    def TRANSLATE_URL(self):
+        return self.get_val('brand', 'translate_url')
+
 
 brand = _brand_namespace()
