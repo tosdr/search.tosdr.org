@@ -20,7 +20,7 @@ import git
 
 # version of searx
 VERSION_MAJOR = 2
-VERSION_MINOR = 0
+VERSION_MINOR = 1
 VERSION_BUILD = 0
 
 VERSION_STRING = "{0}.{1}.{2}".format(VERSION_MAJOR,
