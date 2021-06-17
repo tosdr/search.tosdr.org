@@ -84,7 +84,7 @@ from searx.webutils import (
 )
 from searx.webadapter import get_search_query_from_webapp, get_selected_categories
 from searx.utils import html_to_text, gen_useragent, dict_subset, match_language
-from searx.version import VERSION_STRING
+from searx.version import VERSION_STRING, VERSION_COMMIT
 from searx.languages import language_codes as languages
 from searx.search import SearchWithPlugins, initialize as search_initialize
 from searx.search.checker import get_result as checker_get_result
@@ -399,6 +399,7 @@ def render(template_name, override_theme=None, **kwargs):
         kwargs['rtl'] = True
 
     kwargs['searx_version'] = VERSION_STRING
+    kwargs['searx_commit'] = VERSION_COMMIT
 
     kwargs['method'] = request.preferences.get_value('method')
 

@@ -16,6 +16,8 @@ along with searx. If not, see < http://www.gnu.org/licenses/ >.
 (C) 2013- by Adam Tauber, <asciimoo@gmail.com>
 '''
 
+import git
+
 # version of searx
 VERSION_MAJOR = 2
 VERSION_MINOR = 0
@@ -24,3 +26,6 @@ VERSION_BUILD = 0
 VERSION_STRING = "{0}.{1}.{2}".format(VERSION_MAJOR,
                                       VERSION_MINOR,
                                       VERSION_BUILD)
+
+
+VERSION_COMMIT = git.Repo(search_parent_directories=True).head.object.hexsha or "Unknown"
