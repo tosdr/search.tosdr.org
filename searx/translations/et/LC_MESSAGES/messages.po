@@ -1081,3 +1081,6 @@ msgstr "Privaatsus"
 #: searx/templates/simple/result_templates/map.html:35
 msgid "Loading..."
 msgstr "Laadimine..."
+
+msgid "Translate ToS;DR Search"
+msgstr ""
