@@ -1080,3 +1080,6 @@ msgstr "Privatumas"
 #: searx/templates/simple/result_templates/map.html:35
 msgid "Loading..."
 msgstr "Įkeliama..."
+
+msgid "Translate ToS;DR Search"
+msgstr ""
