@@ -1087,3 +1087,6 @@ msgstr "Privacidade"
 #: searx/templates/simple/result_templates/map.html:35
 msgid "Loading..."
 msgstr "Carregando..."
+
+msgid "Translate ToS;DR Search"
+msgstr ""
