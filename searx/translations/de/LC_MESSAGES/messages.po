@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:39+0200\n"
-"PO-Revision-Date: 2021-06-18 00:22+0000\n"
+"PO-Revision-Date: 2021-06-18 00:45+0000\n"
 "Last-Translator: Justin Back <justin@tosdr.org>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
 "main/de/>\n"
@@ -249,10 +249,8 @@ msgstr ""
 "anzuzeigen."
 
 #: ../searx/plugins/answerer/alternative/answerer.py:24
-#, fuzzy
-#| msgid "Translate ToS;DR Search"
 msgid "The ToS;DR Team"
-msgstr "ToS;DR Search Übersetzen"
+msgstr "Das ToS;DR Team"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
@@ -264,17 +262,12 @@ msgstr ""
 "Erhalte Privatsphären-Freundliche Alternativen von populären Webseiten."
 
 #: ../searx/plugins/answerer/alternative/answerer.py:90
-#, fuzzy
-#| msgid "Contact instance maintainer"
 msgid "Report a bug to the maintainer"
-msgstr "Kontaktiere Instanz Verwaltung"
+msgstr "Melde dem Entwickler einen Fehler"
 
 #: ../searx/plugins/answerer/alternative/templates/answer.html:1
-#, fuzzy
-#| msgid "Get privacy friendly alternatives from popular services."
 msgid "Privacy friendly alternatives to {service}"
-msgstr ""
-"Erhalte Privatsphären-Freundliche Alternativen von populären Webseiten."
+msgstr "Privatsphären-Freundliche Alternative zu {service}"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
 msgid "Ascii Shortcuts"
@@ -297,7 +290,7 @@ msgstr ""
 #: ../searx/plugins/answerer/bitcoin/templates/all.html:1
 #: ../searx/plugins/answerer/bitcoin/templates/currency.html:1
 msgid "The current Bitcoin index is"
-msgstr ""
+msgstr "Der aktuelle Bitcoin Kurs ist"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:79
 msgid "Cheatsheet Index"
@@ -308,14 +301,12 @@ msgid "Cheatsheet module to load some awesome modules found around the web."
 msgstr "Spickzettel Modul um coole Spickzettel aus dem Internet zu laden."
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:1
-#, fuzzy
-#| msgid "Cheatsheet Index"
 msgid "Guitar Cheatsheet"
-msgstr "Spickzettel Index"
+msgstr "Gitarren Spickzettel"
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:24
 msgid "Cheatsheet Images by {source}"
-msgstr ""
+msgstr "Spickzettel Bilder von {source}"
 
 #: ../searx/plugins/answerer/grade/answerer.py:82
 msgid "{service} has a Privacy {grade} on ToS;DR"
@@ -886,7 +877,7 @@ msgstr "Derzeit sind keine Cookies gespeichert."
 
 #: ../searx/templates/oscar/messages/no_data_available.html:4
 msgid "There is currently no data available. "
-msgstr "Es sind derzeit keine Daten vorhanden."
+msgstr "Es sind derzeit keine Daten vorhanden. "
 
 #: ../searx/templates/oscar/messages/no_results.html:4
 msgid "Engines cannot retrieve results."
