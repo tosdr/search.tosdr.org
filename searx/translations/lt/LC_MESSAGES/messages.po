@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-18 02:39+0200\n"
+"POT-Creation-Date: 2021-06-18 02:49+0200\n"
 "PO-Revision-Date: 2020-07-12 11:15+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/asciimoo/searx/language/"
@@ -681,6 +681,10 @@ msgid "Name"
 msgstr "Pavadinimas"
 
 #: ../searx/templates/oscar/preferences.html:367
+#: ../searx/templates/oscar/results.html:191
+#: ../searx/templates/oscar/results.html:196
+#: ../searx/templates/oscar/results.html:204
+#: ../searx/templates/oscar/results.html:209
 msgid "Developer"
 msgstr ""
 
@@ -784,6 +788,32 @@ msgstr "Paieškos rezultatai"
 #: ../searx/templates/oscar/results.html:112
 msgid "Try searching for:"
 msgstr "Bandykite ieškoti:"
+
+#: ../searx/templates/oscar/results.html:159
+msgid "No Description provided by the developer"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:166
+#, fuzzy
+#| msgid "Issue tracker"
+msgid "Issue Tracker"
+msgstr "Klaidų sekiklis"
+
+#: ../searx/templates/oscar/results.html:175
+msgid ""
+"Source\n"
+"                                                        Code"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:183
+msgid "Website"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:253
+#: ../searx/templates/oscar/results.html:283
+#: ../searx/templates/oscar/results.html:296
+msgid "Missing Text"
+msgstr ""
 
 #: ../searx/templates/oscar/results.html:333
 #: ../searx/templates/oscar/results.html:367

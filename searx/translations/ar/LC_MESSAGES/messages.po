@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-18 02:39+0200\n"
+"POT-Creation-Date: 2021-06-18 02:49+0200\n"
 "PO-Revision-Date: 2020-07-09 13:10+0000\n"
 "Last-Translator: Adam Tauber <asciimoo@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/asciimoo/searx/language/"
@@ -667,6 +667,10 @@ msgid "Name"
 msgstr "التسمية"
 
 #: ../searx/templates/oscar/preferences.html:367
+#: ../searx/templates/oscar/results.html:191
+#: ../searx/templates/oscar/results.html:196
+#: ../searx/templates/oscar/results.html:204
+#: ../searx/templates/oscar/results.html:209
 msgid "Developer"
 msgstr ""
 
@@ -761,6 +765,30 @@ msgstr "حصيلة البحث"
 #: ../searx/templates/oscar/results.html:112
 msgid "Try searching for:"
 msgstr "حاول البحث عن :"
+
+#: ../searx/templates/oscar/results.html:159
+msgid "No Description provided by the developer"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:166
+msgid "Issue Tracker"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:175
+msgid ""
+"Source\n"
+"                                                        Code"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:183
+msgid "Website"
+msgstr ""
+
+#: ../searx/templates/oscar/results.html:253
+#: ../searx/templates/oscar/results.html:283
+#: ../searx/templates/oscar/results.html:296
+msgid "Missing Text"
+msgstr ""
 
 #: ../searx/templates/oscar/results.html:333
 #: ../searx/templates/oscar/results.html:367
