@@ -21,12 +21,13 @@
 # stf <stefan.marsiske@gmail.com>, 2014
 # Thomas Pointhuber, 2016-2017
 # rike, 2014
+# Justin Back <justin@tosdr.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:03+0200\n"
-"PO-Revision-Date: 2021-06-17 23:49+0000\n"
+"PO-Revision-Date: 2021-06-18 00:21+0000\n"
 "Last-Translator: Justin Back <justin@tosdr.org>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
 "main/de/>\n"
@@ -76,7 +77,7 @@ msgstr "Karte"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr ""
+msgstr "onions"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -84,7 +85,7 @@ msgstr "Wissenschaft"
 
 #: ../searx/webapp.py:375
 msgid "could not load data"
-msgstr ""
+msgstr "Kann Daten nicht laden"
 
 #: ../searx/webapp.py:377
 msgid "No item found"
@@ -159,22 +160,20 @@ msgid "No abstract is available for this publication."
 msgstr "Keine Zusammenfassung für die Veröffentlichung verfügbar."
 
 #: ../searx/plugins/better_answerer.py:9
-#, fuzzy
-#| msgid "Answerers"
 msgid "Better Answerers"
-msgstr "Antworten"
+msgstr "Verbesserte Antworten"
 
 #: ../searx/plugins/better_answerer.py:10
 msgid "Module to improve the Answerer functionality in searx"
-msgstr ""
+msgstr "Modul um die \"Answerer\" Module in Searx zu verbessern"
 
 #: ../searx/plugins/hostname_replace.py:7
 msgid "Hostname replace"
-msgstr ""
+msgstr "Hostname ersetzen"
 
 #: ../searx/plugins/hostname_replace.py:8
 msgid "Rewrite result hostnames"
-msgstr ""
+msgstr "Schreibt Resultat Hostnames um"
 
 #: ../searx/plugins/https_rewrite.py:29
 msgid "Rewrite HTTP links to HTTPS if possible"
@@ -216,10 +215,8 @@ msgstr ""
 "benötigt)"
 
 #: ../searx/plugins/self_info.py:19
-#, fuzzy
-#| msgid "Information!"
 msgid "Self Informations"
-msgstr "Information!"
+msgstr "Informationen"
 
 #: ../searx/plugins/self_info.py:20
 msgid ""
@@ -253,81 +250,82 @@ msgstr ""
 
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
-msgstr ""
+msgstr "Privatsphären Alternative"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:86
 msgid "Get privacy friendly alternatives from popular services."
-msgstr ""
+msgstr "Erhalte Privatsphären-Freundliche Alternativen von populären Webseiten."
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Ascii Shortcuts"
-msgstr "Abkürzung"
+msgstr "Ascii Kürzel"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:42
 msgid "Does some Ascii Stuff"
-msgstr ""
+msgstr "Macht Ascii sachen"
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:96
 msgid "Bitcoin Index"
-msgstr ""
+msgstr "Bitcoin Kurs"
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:97
 msgid "Get a the bitcoin index via currency or by default via USD, EUR and GBP"
 msgstr ""
+"Erhalte den aktuellen Bitcoin Kurs via Währung oder Standardmäßig via USD, "
+"EUR und GBP"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:79
 msgid "Cheatsheet Index"
-msgstr ""
+msgstr "Spickzettel Index"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:80
 msgid "Cheatsheet module to load some awesome modules found around the web."
-msgstr ""
+msgstr "Spickzettel Modul um coole Spickzettel aus dem Internet zu laden."
 
 #: ../searx/plugins/answerer/grade/answerer.py:82
 msgid "{service} has a Privacy {grade} on ToS;DR"
-msgstr ""
+msgstr "{service} hat eine Datenschutzklasse {grade} auf ToS;DR"
 
 #: ../searx/plugins/answerer/grade/answerer.py:116
 msgid "ToS;DR Grade"
-msgstr ""
+msgstr "ToS;DR Klasse"
 
 #: ../searx/plugins/answerer/grade/answerer.py:117
 msgid "Get a grade from ToS;DR using the ToS;DR API"
-msgstr ""
+msgstr "Erhalte eine Datenschutz Klasse von ToS;DR mit der ToS;DR API"
 
 #: ../searx/plugins/answerer/hash/answerer.py:69
 msgid "Hash Generator"
-msgstr ""
+msgstr "Hash Generator"
 
 #: ../searx/plugins/answerer/hash/answerer.py:70
 msgid "Generate md4, md5, sha1, sha256 and sha512 hashes"
-msgstr ""
+msgstr "Generiere md4, md5, sha1, sha256 and sha512 hashes"
 
 #: ../searx/plugins/answerer/leetspeak/answerer.py:64
 msgid "Leetspeak Answerer"
-msgstr ""
+msgstr "Leetspeak Antworter"
 
 #: ../searx/plugins/answerer/leetspeak/answerer.py:65
+#, fuzzy
 msgid "L 3 3 '][' 5 |D 3 /-\\ |< I 5 C 0 0 |_"
-msgstr ""
+msgstr "L 3 3 '][' 5 |D 3 /-\\ |< I 5 C 0 0 |_"
 
 #: ../searx/plugins/answerer/nato/answerer.py:66
 msgid "Nato Converter"
-msgstr ""
+msgstr "Nato Konvertierer"
 
 #: ../searx/plugins/answerer/nato/answerer.py:67
 msgid "Converts words into the nato phonetic alphabet"
-msgstr ""
+msgstr "Konvertiert Wörter in das NATO Alphabet."
 
 #: ../searx/plugins/answerer/onion/answerer.py:40
 msgid "Onion Notice"
-msgstr ""
+msgstr "Onion Hinweis"
 
 #: ../searx/plugins/answerer/onion/answerer.py:41
 msgid "Give a notice if an onion address has been queried"
-msgstr ""
+msgstr "Gibt einen Hinweis dass eine Onion Adresse aufgerufen wurde"
 
 #: ../searx/plugins/answerer/random/answerer.py:94
 msgid "Random value generator"
@@ -372,11 +370,11 @@ msgstr "Fehler!"
 
 #: ../searx/templates/oscar/base.html:107
 msgid "Powered by {searx} and forked by {tosdr}"
-msgstr ""
+msgstr "Bereitgestellt dutch {searx} und überarbeitet von {tosdr}"
 
 #: ../searx/templates/oscar/base.html:108
 msgid "{version} on commit {hash}"
-msgstr ""
+msgstr "{version} auf commit {hash}"
 
 #: ../searx/templates/oscar/base.html:109
 msgid "a privacy-respecting, hackable metasearch engine"
@@ -449,7 +447,7 @@ msgstr "Einstellungen"
 
 #: ../searx/templates/oscar/preferences.html:12
 msgid "No HTTPS"
-msgstr ""
+msgstr "Kein HTTPS"
 
 #: ../searx/templates/oscar/preferences.html:21
 msgid "Preferences"
@@ -605,7 +603,7 @@ msgstr "Erweiterte Einstellungen"
 
 #: ../searx/templates/oscar/preferences.html:178
 msgid "Show advanced settings panel in the home page by default"
-msgstr ""
+msgstr "Zeige Erweiterete Einstellungen auf der Startseite Standardmäßig"
 
 #: ../searx/templates/oscar/preferences.html:190
 msgid "Open Access DOI resolver"
@@ -677,7 +675,7 @@ msgstr "Name"
 
 #: ../searx/templates/oscar/preferences.html:367
 msgid "Developer"
-msgstr ""
+msgstr "Entwickler"
 
 #: ../searx/templates/oscar/preferences.html:368
 msgid "Description"
@@ -916,10 +914,8 @@ msgid "Author"
 msgstr "Autor"
 
 #: ../searx/templates/oscar/result_templates/files.html:35
-#, fuzzy
-#| msgid "Engine name"
 msgid "Filename"
-msgstr "Suchmaschinenname"
+msgstr "Dateiname"
 
 #: ../searx/templates/oscar/result_templates/files.html:37
 #: ../searx/templates/oscar/result_templates/torrent.html:7
@@ -953,11 +949,11 @@ msgstr "TB"
 
 #: ../searx/templates/oscar/result_templates/files.html:46
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: ../searx/templates/oscar/result_templates/files.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: ../searx/templates/oscar/result_templates/images.html:27
 msgid "Get image"
