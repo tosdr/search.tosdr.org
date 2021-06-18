@@ -21,7 +21,7 @@ keywords = (
 )
 
 author = [{
-    'name': 'The ToS;DR Team',
+    'name': gettext('The ToS;DR Team'),
     'url': "https://tosdr.org",
 }]
 
@@ -87,7 +87,7 @@ def self_info():
             'examples': ['alternative google'],
             'bugs': {
                 'url': 'https://tosdr.atlassian.net/browse/TDS',
-                'text': 'Report a bug to the maintainer'
+                'text': gettext('Report a bug to the maintainer')
             },
             'website': 'https://tosdr.org',
             'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/alternative/answerer.py'

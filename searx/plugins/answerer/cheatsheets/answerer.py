@@ -16,33 +16,33 @@ from flask_babel import gettext
 from searx import settings
 from searx.utils import load_module
 
-keywords = ('(cheatsheet|cheat sheet) (.*)', '(.*) (cheatsheet|cheat sheet)')
+keywords = (
+'(cheatsheet|cheat sheet|spickzettel|spick zettel) (.*)', '(.*) (cheatsheet|cheat sheet|spickzettel|spick zettel)')
 
 author = [{
     'name': 'Justin Back',
     'url': "https://github.com/JustinBack"
 }]
 
+
 def get_cheatsheet_by_regex(string):
     cheatsheetlist = []
 
     for cheatsheet in cheatsheets:
         for keyword in cheatsheet['module'].keywords:
-            if re.match(keyword, string):
+            if re.match(keyword, string, re.IGNORECASE):
                 cheatsheetlist.append(cheatsheet)
     return cheatsheetlist
 
+
 def answer(query):
     if re.match(keywords[0], query):
-        cheatcheetName = re.match(keywords[0], query).group(2)
+        cheatcheetName = re.match(keywords[0], query, re.IGNORECASE).group(2)
     else:
-        cheatcheetName = re.match(keywords[1], query).group(1)
+        cheatcheetName = re.match(keywords[1], query, re.IGNORECASE).group(1)
 
     for cheatcheet in get_cheatsheet_by_regex(cheatcheetName):
         return cheatcheet['module'].execute(query)
-
-
-
 
 
 def loadCheatSheets():
@@ -81,5 +81,6 @@ def self_info():
             'examples': ['cheatsheet guitar'],
             'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/cheatsheet/answerer.py',
             'website': 'https://tosdr.org'}
+
 
 cheatsheets = loadCheatSheets()

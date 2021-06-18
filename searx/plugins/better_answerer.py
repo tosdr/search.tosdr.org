@@ -45,7 +45,7 @@ def get_answerers_by_regex(string):
 
     for answerer in answerers:
         for keyword in answerer['module'].keywords:
-            if re.match(keyword, string):
+            if re.match(keyword, string, re.IGNORECASE):
                 answererlist.append(answerer)
     return answererlist
 

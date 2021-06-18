@@ -1,4 +1,4 @@
-<h4>Privacy friendly alternatives to {{ original|capitalize }}:</h4>
+<h4>{{ _('Privacy friendly alternatives to {service}').format(service=original|capitalize) }}:</h4>
 <ol>
     {% for alternative in alternatives %}
         <li>

@@ -13,7 +13,7 @@ from flask_babel import gettext
 from searx import settings
 
 keywords = (
-    '(.*guitar.*)',
+    '(.*guitar|gitarre.*)',
 )
 
 author = [{
