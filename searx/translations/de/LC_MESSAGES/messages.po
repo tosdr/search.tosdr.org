@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-18 02:03+0200\n"
+"POT-Creation-Date: 2021-06-18 02:27+0200\n"
 "PO-Revision-Date: 2021-06-18 00:22+0000\n"
 "Last-Translator: Justin Back <justin@tosdr.org>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
@@ -254,7 +254,8 @@ msgstr "Privatsphären Alternative"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:86
 msgid "Get privacy friendly alternatives from popular services."
-msgstr "Erhalte Privatsphären-Freundliche Alternativen von populären Webseiten."
+msgstr ""
+"Erhalte Privatsphären-Freundliche Alternativen von populären Webseiten."
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
 msgid "Ascii Shortcuts"
