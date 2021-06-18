@@ -944,4 +944,3 @@ msgstr ""
 #: ../searx/templates/oscar/result_templates/videos.html:20
 msgid "Length"
 msgstr ""
-
