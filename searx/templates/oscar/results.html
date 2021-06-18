@@ -156,14 +156,14 @@
 
                                         <div class="modal-body">
                                             <p>
-                                                {{ answer.info.description|default('No Description provided by the developer') }}
+                                                {{ answer.info.description|default(_('No Description provided by the developer')) }}
                                             </p>
 
                                             {% if answer.info.bugs and answer.info.bugs.url %}
                                                 <p>
                                                     <small>
                                                         <i class="fas fa-bug"></i> <a target="_blank"
-                                                                                      href="{{ answer.info.bugs.url }}">{{ answer.info.bugs.text|default('Issue Tracker') }}</a></small>
+                                                                                      href="{{ answer.info.bugs.url }}">{{ answer.info.bugs.text|default(_('Issue Tracker')) }}</a></small>
 
 
                                                 </p>
@@ -172,15 +172,15 @@
                                                 <p>
                                                     <small>
                                                         <i class="fas fa-code-branch"></i> <a target="_blank"
-                                                                                              href="{{ answer.info.repository }}">Source
-                                                        Code</a></small>
+                                                                                              href="{{ answer.info.repository }}">{{ _('Source
+                                                        Code') }}</a></small>
                                                 </p>
                                             {% endif %}
                                             {% if answer.info.website %}
                                                 <p>
                                                     <small>
                                                         <i class="fas fa-globe"></i> <a target="_blank"
-                                                                                              href="{{ answer.info.website }}">Website</a></small>
+                                                                                              href="{{ answer.info.website }}">{{ _('Website') }}</a></small>
                                                 </p>
                                             {% endif %}
                                             <hr>
@@ -188,12 +188,12 @@
                                                 {% for Developer in answer.author %}
                                                     <p>
                                                         {% if Developer.url %}
-                                                            <p>{{ Developer.title|default('Developer') }}: <a
+                                                            <p>{{ Developer.title|default(_('Developer')) }}: <a
                                                                     target="_blank"
                                                                     href="{{ Developer.url }}">{{ Developer.name }}</a>
                                                             </p>
                                                         {% else %}
-                                                            <p>{{ Developer.title|default('Developer') }}:
+                                                            <p>{{ Developer.title|default(_('Developer')) }}:
                                                                 {{ Developer.name }}</p>
                                                         {% endif %}
                                                     </p>
@@ -201,12 +201,12 @@
                                             {% else %}
                                                 <p>
                                                     {% if answer.author.url %}
-                                                        <p>{{ answer.author.title|default('Developer') }}: <a
+                                                        <p>{{ answer.author.title|default(_('Developer')) }}: <a
                                                                 target="_blank"
                                                                 href="{{ answer.author.url }}">{{ answer.author.name }}</a>
                                                         </p>
                                                     {% else %}
-                                                        <p>{{ answer.author.title|default('Developer') }}:
+                                                        <p>{{ answer.author.title|default(_('Developer')) }}:
                                                             {{ answer.author.name }}</p>
                                                     {% endif %}
                                                 </p>
@@ -250,7 +250,7 @@
                                         {% if answer.button.icon %}
                                             <i class="fas fa-{{ answer.button.icon }}"></i>
                                         {% endif %}
-                                        {{ answer.button.text|default('Missing Text') }}
+                                        {{ answer.button.text|default(_('Missing Text')) }}
                                     </a>
                                 {% endif %}
                             {% endif %}
@@ -280,7 +280,7 @@
                                         {% if answer.button.icon %}
                                             <i class="fas fa-{{ answer.button.icon }}"></i>
                                         {% endif %}
-                                        {{ answer.button.text|default('Missing Text') }}
+                                        {{ answer.button.text|default(_('Missing Text')) }}
                                     </a>
                                 {% endif %}
                             {% endif %}
@@ -293,7 +293,7 @@
                                         {% if answer.button.icon %}
                                             <i class="fas fa-{{ answer.button.icon }}"></i>
                                         {% endif %}
-                                        {{ answer.button.text|default('Missing Text') }}
+                                        {{ answer.button.text|default(_('Missing Text')) }}
                                     </a>
                                 {% endif %}
                             {% endif %}
