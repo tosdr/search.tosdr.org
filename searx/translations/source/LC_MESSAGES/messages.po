@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-18 01:52+0200\n"
+"POT-Creation-Date: 2021-06-18 02:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,39 +318,43 @@ msgstr ""
 msgid "Advanced settings"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:55
+#: ../searx/templates/oscar/base.html:77
 #: ../searx/templates/oscar/messages/first_time.html:4
 #: ../searx/templates/oscar/messages/save_settings_successfull.html:5
 #: ../searx/templates/oscar/messages/unknow_error.html:5
 msgid "Close"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:57
+#: ../searx/templates/oscar/base.html:79
 #: ../searx/templates/oscar/messages/no_results.html:4
 msgid "Error!"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:85
-msgid "Powered by"
+#: ../searx/templates/oscar/base.html:107
+msgid "Powered by {searx} and forked by {tosdr}"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:85
+#: ../searx/templates/oscar/base.html:108
+msgid "{version} on commit {hash}"
+msgstr ""
+
+#: ../searx/templates/oscar/base.html:109
 msgid "a privacy-respecting, hackable metasearch engine"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:86
+#: ../searx/templates/oscar/base.html:110
 msgid "Source code"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:87
+#: ../searx/templates/oscar/base.html:111
 msgid "Issue tracker"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:88
+#: ../searx/templates/oscar/base.html:113
 msgid "Contact instance maintainer"
 msgstr ""
 
-#: ../searx/templates/oscar/base.html:89
+#: ../searx/templates/oscar/base.html:115
 msgid "Translate ToS;DR Search"
 msgstr ""
 
