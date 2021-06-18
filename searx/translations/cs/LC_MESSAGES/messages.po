@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-18 02:27+0200\n"
+"POT-Creation-Date: 2021-06-18 02:39+0200\n"
 "PO-Revision-Date: 2020-07-16 13:52+0000\n"
 "Last-Translator: Lukáš Kucharczyk <lukas@kucharczyk.xyz>\n"
 "Language-Team: Czech (http://www.transifex.com/asciimoo/searx/language/cs/)\n"
@@ -233,12 +233,24 @@ msgstr ""
 "(vyžaduje JavaScript). Stisknutím klávesy \"h\" na hlavní stránce či stránce "
 "výsledků zobrazíte nápovědu."
 
+#: ../searx/plugins/answerer/alternative/answerer.py:24
+msgid "The ToS;DR Team"
+msgstr ""
+
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
 msgstr ""
 
 #: ../searx/plugins/answerer/alternative/answerer.py:86
 msgid "Get privacy friendly alternatives from popular services."
+msgstr ""
+
+#: ../searx/plugins/answerer/alternative/answerer.py:90
+msgid "Report a bug to the maintainer"
+msgstr ""
+
+#: ../searx/plugins/answerer/alternative/templates/answer.html:1
+msgid "Privacy friendly alternatives to {service}"
 msgstr ""
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
@@ -259,12 +271,25 @@ msgstr ""
 msgid "Get a the bitcoin index via currency or by default via USD, EUR and GBP"
 msgstr ""
 
+#: ../searx/plugins/answerer/bitcoin/templates/all.html:1
+#: ../searx/plugins/answerer/bitcoin/templates/currency.html:1
+msgid "The current Bitcoin index is"
+msgstr ""
+
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:79
 msgid "Cheatsheet Index"
 msgstr ""
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:80
 msgid "Cheatsheet module to load some awesome modules found around the web."
+msgstr ""
+
+#: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:1
+msgid "Guitar Cheatsheet"
+msgstr ""
+
+#: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:24
+msgid "Cheatsheet Images by {source}"
 msgstr ""
 
 #: ../searx/plugins/answerer/grade/answerer.py:82
