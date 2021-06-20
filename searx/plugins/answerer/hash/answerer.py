@@ -24,8 +24,8 @@ author = [{
 
 
 def answer(query):
-    algo = re.match(keywords[0], query).group(1)
-    string = re.match(keywords[0], query).group(2)
+    algo = re.match(keywords[0], query, re.IGNORECASE).group(1).lower()
+    string = re.match(keywords[0], query, re.IGNORECASE).group(2)
 
     if algo == 'md5':
         hash = md5(string)

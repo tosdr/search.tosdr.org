@@ -33,15 +33,15 @@ def answer(query):
     matches = False
 
 
-    if re.match(keywords[2], query):
-        service = query.replace('alternative', '')
-        service = query.replace('?', '')
+    if re.match(keywords[2], query, re.IGNORECASE):
+        service = query.lower().replace('alternative', '')
+        service = query.lower().replace('?', '')
         matches = True
     elif not matches:
         for index, keyword in enumerate(keywords):
             if re.match(keyword, query):
                 try:
-                    service = re.match(keywords[index], query).group(2)
+                    service = re.match(keywords[index], query, re.IGNORECASE).group(2)
                     matches = True
                     break
                 except:

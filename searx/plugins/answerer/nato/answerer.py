@@ -20,7 +20,7 @@ author = [{
 
 
 def answer(query):
-    string = re.match(keywords[0], query).group(2)
+    string = re.match(keywords[0], query, re.IGNORECASE).group(2)
 
     CharSet = {
         'a': 'Alfa',

@@ -22,9 +22,9 @@ author = [{
 
 
 def answer(query):
-    if re.match(keywords[0], query):
+    if re.match(keywords[0], query, re.IGNORECASE):
 
-        currency = re.match(keywords[0], query).group(2)
+        currency = re.match(keywords[0], query, re.IGNORECASE).group(2)
         api = lookup_currency(currency)
 
         if not api:

@@ -49,24 +49,24 @@ def answer(query):
     service = ''
     matches = False
 
-    if re.match(keywords[0], query):
-        service = query.replace('grade', '')
-        service = query.replace('?', '')
+    if re.match(keywords[0], query, re.IGNORECASE):
+        service = query.lower().replace('grade', '')
+        service = query.lower().replace('?', '')
         matches = True
-    elif re.match(keywords[1], query):
-        service = query.replace('privacy', '')
-        service = query.replace('?', '')
+    elif re.match(keywords[1], query, re.IGNORECASE):
+        service = query.lower().replace('privacy', '')
+        service = query.lower().replace('?', '')
         matches = True
-    elif re.match(keywords[2], query):
-        service = query.replace('service', '')
-        service = query.replace('?', '')
+    elif re.match(keywords[2], query, re.IGNORECASE):
+        service = query.lower().replace('service', '')
+        service = query.lower().replace('?', '')
         matches = True
 
     if not matches:
         for index, keyword in enumerate(keywords):
-            if re.match(keyword, query):
+            if re.match(keyword, query, re.IGNORECASE):
                 try:
-                    service = re.match(keywords[index], query).group(3)
+                    service = re.match(keywords[index], query, re.IGNORECASE).group(3)
                     matches = True
                     break
                 except:
