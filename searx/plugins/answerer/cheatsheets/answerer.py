@@ -79,7 +79,7 @@ def self_info():
     return {'name': gettext('Cheatsheet Index'),
             'description': gettext('Cheatsheet module to load some awesome modules found around the web.'),
             'examples': ['cheatsheet guitar'],
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/cheatsheet/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/cheatsheet/answerer.py',
             'website': 'https://tosdr.org'}
 
 

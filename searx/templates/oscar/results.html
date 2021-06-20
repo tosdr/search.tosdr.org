@@ -172,7 +172,7 @@
                                                 <p>
                                                     <small>
                                                         <i class="fas fa-code-branch"></i> <a target="_blank"
-                                                                                              href="{{ answer.info.repository }}">{{ _('Source
+                                                                                              href="{{ answer.info.repository|replace("{commit}", searx_commit)|replace("{repository}", brand.GIT_URL) }}">{{ _('Source
                                                         Code') }}</a></small>
                                                 </p>
                                             {% endif %}

@@ -121,5 +121,5 @@ def self_info():
                 'text': 'Report a bug to the maintainer'
             },
             'website': 'https://tosdr.org',
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/grade/answerer.py'
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/grade/answerer.py'
             }

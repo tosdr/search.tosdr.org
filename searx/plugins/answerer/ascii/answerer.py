@@ -41,6 +41,6 @@ def self_info():
     return {'name': gettext('Ascii Shortcuts'),
             'description': gettext('Does some Ascii Stuff'),
             'examples': ['shrug', 'table flip', 'unflip table'],
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/ascii/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/ascii/answerer.py',
             'website': 'https://tosdr.org'
             }

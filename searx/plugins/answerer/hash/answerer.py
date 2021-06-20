@@ -69,6 +69,6 @@ def self_info():
     return {'name': gettext('Hash Generator'),
             'description': gettext('Generate md4, md5, sha1, sha256 and sha512 hashes'),
             'examples': ['sha256 My String'],
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/hash/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/hash/answerer.py',
             'website': 'https://tosdr.org'
             }

@@ -70,6 +70,6 @@ def self_info():
                 'text': 'Issue Tracker',
                 'url': 'https://tosdr.atlassian.net/browse/TDS'
             },
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/nato/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/nato/answerer.py',
             'website': 'https://tosdr.org'
             }

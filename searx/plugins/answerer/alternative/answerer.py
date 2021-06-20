@@ -90,7 +90,7 @@ def self_info():
                 'text': gettext('Report a bug to the maintainer')
             },
             'website': 'https://tosdr.org',
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/alternative/answerer.py'
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/alternative/answerer.py'
             }
 
 

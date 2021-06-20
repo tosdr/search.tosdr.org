@@ -94,5 +94,5 @@ def self_info():
     return {'name': gettext('Random value generator'),
             'description': gettext('Generate different random values'),
             'examples': ['random {}'.format(x) for x in random_types],
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/random/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/random/answerer.py',
             'website': 'https://tosdr.org'}

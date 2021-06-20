@@ -96,5 +96,5 @@ def self_info():
     return {'name': gettext('Bitcoin Index'),
             'description': gettext('Get a the bitcoin index via currency or by default via USD, EUR and GBP'),
             'examples': ['bitcoin EUR', 'bitcoin', 'btc EUR', 'btc'],
-            'repository': 'https://bitbucket.org/tosdr/search/src/master/searx/plugins/answerer/bitcoin/answerer.py',
+            'repository': '{repository}/src/{commit}/searx/plugins/answerer/bitcoin/answerer.py',
             'website': 'https://tosdr.org'}
