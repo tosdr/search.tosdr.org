@@ -367,6 +367,7 @@
                                 <th{% if rtl %} class="text-right"{% endif %}>{{ _('Developer') }}</th>
                                 <th{% if rtl %} class="text-right"{% endif %}>{{ _('Description') }}</th>
                                 <th{% if rtl %} class="text-right"{% endif %}>{{ _('Examples') }}</th>
+                                <th{% if rtl %} class="text-right"{% endif %}>{{ _('Links') }}</th>
                             </tr>
 
                             {% for answerer in answerers %}
@@ -401,6 +402,12 @@
                                     </td>
                                     <td>{{ answerer.info.description }}</td>
                                     <td>{{ answerer.info.examples|join(', ') }}</td>
+                                    <td>
+                                        <small>
+                                            <i class="fas fa-code-branch"></i> <a target="_blank"
+                                                                                  href="{{ answerer.info.repository|replace("{commit}", searx_commit)|replace("{repository}", brand.GIT_URL) }}">{{ _('Source
+                                                        Code') }}</a></small>
+                                    </td>
                                 </tr>
                             {% endfor %}
                         </table>
