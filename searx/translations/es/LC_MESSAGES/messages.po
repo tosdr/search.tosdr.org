@@ -15,21 +15,23 @@
 # O <b204fbaf817497f9ea35edbcc051de81_265921>, 2015
 # rivera valdez <riveravaldezmail@gmail.com>, 2016
 # wefwefew ewfewfewf <nnnedmz0d@moakt.ws>, 2016
+# Agnes de Lion <irubiogafsi@pm.me>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2020-10-17 14:13+0000\n"
-"Last-Translator: novales35 <guillermocebollero@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/asciimoo/searx/language/"
-"es/)\n"
+"PO-Revision-Date: 2021-06-24 15:38+0000\n"
+"Last-Translator: Agnes de Lion <irubiogafsi@pm.me>\n"
+"Language-Team: Spanish <https://translate.tosdr.org/projects/tosdr-search/"
+"main/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 "Generated-By: Babel 2.7.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../searx/webapp.py:164
 msgid "files"
@@ -69,7 +71,7 @@ msgstr "Mapa"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr ""
+msgstr "onions"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -77,7 +79,7 @@ msgstr "Ciencia"
 
 #: ../searx/webapp.py:375
 msgid "could not load data"
-msgstr ""
+msgstr "No se pudo cargar los datos"
 
 #: ../searx/webapp.py:377
 msgid "No item found"
@@ -141,7 +143,7 @@ msgstr "Obtener indicaciones"
 
 #: ../searx/engines/pdbe.py:90
 msgid "{title} (OBSOLETE)"
-msgstr ""
+msgstr "{title} (OBSOLETO)"
 
 #: ../searx/engines/pdbe.py:97
 msgid "This entry has been superseded by"
@@ -152,22 +154,20 @@ msgid "No abstract is available for this publication."
 msgstr "No hay resúmenes disponibles para esta publicación."
 
 #: ../searx/plugins/better_answerer.py:9
-#, fuzzy
-#| msgid "Answerers"
 msgid "Better Answerers"
-msgstr "Respondedores"
+msgstr "Mejores Respondedores"
 
 #: ../searx/plugins/better_answerer.py:10
 msgid "Module to improve the Answerer functionality in searx"
-msgstr ""
+msgstr "Módulo para mejorar la funcionalidad de los Respondedores en Searx"
 
 #: ../searx/plugins/hostname_replace.py:7
 msgid "Hostname replace"
-msgstr ""
+msgstr "Remplazar el nombre de equipo"
 
 #: ../searx/plugins/hostname_replace.py:8
 msgid "Rewrite result hostnames"
-msgstr ""
+msgstr "Reescribir los nombres de equipo del resultado"
 
 #: ../searx/plugins/https_rewrite.py:29
 msgid "Rewrite HTTP links to HTTPS if possible"
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../searx/plugins/answerer/alternative/answerer.py:24
 msgid "The ToS;DR Team"
-msgstr ""
+msgstr "El Equipo ToS;DR"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
