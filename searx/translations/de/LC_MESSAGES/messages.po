@@ -22,13 +22,14 @@
 # Thomas Pointhuber, 2016-2017
 # rike, 2014
 # Justin Back <justin@tosdr.org>, 2021.
+# Mark <thedepresseryt@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2021-06-18 00:45+0000\n"
-"Last-Translator: Justin Back <justin@tosdr.org>\n"
+"PO-Revision-Date: 2021-08-30 01:10+0000\n"
+"Last-Translator: Mark <thedepresseryt@gmail.com>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
 "main/de/>\n"
 "Language: de\n"
@@ -223,7 +224,7 @@ msgid ""
 "Displays your IP if the query is \"ip\" and your user agent if the query "
 "contains \"user agent\"."
 msgstr ""
-"Zeigt deine IP-Adresse an,  wenn die Suchabfrage \"ip\" lautet, und deinen "
+"Zeigt deine IP-Adresse an, wenn die Suchabfrage \"ip\" lautet, und deinen "
 "User-Agent, wenn deine Suchabfrage \"user agent\" beinhaltet."
 
 #: ../searx/plugins/tracker_url_remover.py:27
@@ -243,8 +244,8 @@ msgid ""
 "Navigate search results with Vim-like hotkeys (JavaScript required). Press "
 "\"h\" key on main or result page to get help."
 msgstr ""
-"In der Ergebnisseite mit Vim-ähnlichen Tastaturkombinationen navigieren (es "
-"wird JavaScript benötigt).\n"
+"Navigiere Suchergebnisse mit Vim-ähnlichen Tastenkombinationen (es wird "
+"JavaScript benötigt).\n"
 "Auf der Start- bzw. Ergebnisseite \"h\" drücken, um ein Hilfe-Fenster "
 "anzuzeigen."
 
@@ -807,7 +808,7 @@ msgstr "Suche nach:"
 
 #: ../searx/templates/oscar/results.html:159
 msgid "No Description provided by the developer"
-msgstr ""
+msgstr "Keine Beschreibung vom Entwickler bereitgestellt"
 
 #: ../searx/templates/oscar/results.html:166
 #, fuzzy
@@ -819,17 +820,17 @@ msgstr "Bugtracker"
 msgid ""
 "Source\n"
 "                                                        Code"
-msgstr ""
+msgstr "Quellcode"
 
 #: ../searx/templates/oscar/results.html:183
 msgid "Website"
-msgstr ""
+msgstr "Webseite"
 
 #: ../searx/templates/oscar/results.html:253
 #: ../searx/templates/oscar/results.html:283
 #: ../searx/templates/oscar/results.html:296
 msgid "Missing Text"
-msgstr ""
+msgstr "Fehlender Text"
 
 #: ../searx/templates/oscar/results.html:333
 #: ../searx/templates/oscar/results.html:367
