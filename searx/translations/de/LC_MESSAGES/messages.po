@@ -23,13 +23,14 @@
 # rike, 2014
 # Justin Back <justin@tosdr.org>, 2021.
 # Mark <thedepresseryt@gmail.com>, 2021.
+# Arne Hilbig <666arnehilbig@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2021-08-30 01:10+0000\n"
-"Last-Translator: Mark <thedepresseryt@gmail.com>\n"
+"PO-Revision-Date: 2022-04-10 21:11+0000\n"
+"Last-Translator: Arne Hilbig <666arnehilbig@gmail.com>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
 "main/de/>\n"
 "Language: de\n"
@@ -78,7 +79,7 @@ msgstr "Karte"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr "onions"
+msgstr "Zwiebeln"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -245,9 +246,8 @@ msgid ""
 "\"h\" key on main or result page to get help."
 msgstr ""
 "Navigiere Suchergebnisse mit Vim-ähnlichen Tastenkombinationen (es wird "
-"JavaScript benötigt).\n"
-"Auf der Start- bzw. Ergebnisseite \"h\" drücken, um ein Hilfe-Fenster "
-"anzuzeigen."
+"JavaScript benötigt). Auf der Start- bzw. Ergebnisseite \"h\" drücken, um "
+"ein Hilfe-Fenster anzuzeigen."
 
 #: ../searx/plugins/answerer/alternative/answerer.py:24
 msgid "The ToS;DR Team"
@@ -690,8 +690,7 @@ msgstr "max. Zeit"
 
 #: ../searx/templates/oscar/preferences.html:362
 msgid "This is the list of searx's instant answering modules."
-msgstr ""
-"Dies ist die Liste der in searx verfügbaren Module für Sofortantworten "
+msgstr "Dies ist die Liste der in searx verfügbaren Module für Sofortantworten."
 
 #: ../searx/templates/oscar/preferences.html:366
 msgid "Name"
@@ -933,7 +932,7 @@ msgid ""
 "categories."
 msgstr ""
 "Es konnten keine Suchergebnisse gefunden werden. Bitte nutze einen anderen "
-"Suchbegriff, oder suche das gewünschte in einer anderen Kategorie. "
+"Suchbegriff, oder suche das gewünschte in einer anderen Kategorie."
 
 #: ../searx/templates/oscar/messages/save_settings_successfull.html:7
 msgid "Well done!"
