@@ -8,21 +8,24 @@
 # Lukáš Kucharczyk <lukas@kucharczyk.xyz>, 2020
 # Venca24 <Vaclav.Zouzalik@seznam.cz>, 2020
 # Venca24 <Vaclav.Zouzalik@seznam.cz>, 2018
+# Jonáš Loskot <fjuro@seznam.cz>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2020-07-16 13:52+0000\n"
-"Last-Translator: Lukáš Kucharczyk <lukas@kucharczyk.xyz>\n"
-"Language-Team: Czech (http://www.transifex.com/asciimoo/searx/language/cs/)\n"
+"PO-Revision-Date: 2022-05-09 07:12+0000\n"
+"Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
+"Language-Team: Czech <https://translate.tosdr.org/projects/tosdr-search/main/"
+"cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"X-Generator: Weblate 4.5.1\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../searx/webapp.py:164
 msgid "files"
@@ -62,7 +65,7 @@ msgstr "mapa"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr ""
+msgstr "oniony"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -70,7 +73,7 @@ msgstr "věda"
 
 #: ../searx/webapp.py:375
 msgid "could not load data"
-msgstr ""
+msgstr "nepodařilo se načíst data"
 
 #: ../searx/webapp.py:377
 msgid "No item found"
@@ -142,25 +145,23 @@ msgstr "Tato položka byla nahrazena položkou"
 
 #: ../searx/engines/pubmed.py:78
 msgid "No abstract is available for this publication."
-msgstr "Pro tuto publikaci neexistuje žádný abstrakt"
+msgstr "Pro tuto publikaci neexistuje žádný abstrakt."
 
 #: ../searx/plugins/better_answerer.py:9
-#, fuzzy
-#| msgid "Answerers"
 msgid "Better Answerers"
-msgstr "Odpovídači"
+msgstr "Lepší odpovídači"
 
 #: ../searx/plugins/better_answerer.py:10
 msgid "Module to improve the Answerer functionality in searx"
-msgstr ""
+msgstr "Modul k vylepšení funkčnosti Odpovídače v searx"
 
 #: ../searx/plugins/hostname_replace.py:7
 msgid "Hostname replace"
-msgstr ""
+msgstr "Nahrazení hostitele"
 
 #: ../searx/plugins/hostname_replace.py:8
 msgid "Rewrite result hostnames"
-msgstr ""
+msgstr "Přepsat výsledkové hostitele"
 
 #: ../searx/plugins/https_rewrite.py:29
 msgid "Rewrite HTTP links to HTTPS if possible"
@@ -196,13 +197,11 @@ msgid ""
 "multiple categories. (JavaScript required)"
 msgstr ""
 "Provede hledání okamžitě při výběru kategorie. Pokud je tato funkce vypnuta, "
-"je možné vybrat více kategorií (vyžaduje JavaScript)."
+"je možné vybrat více kategorií. (Vyžaduje JavaScript)"
 
 #: ../searx/plugins/self_info.py:19
-#, fuzzy
-#| msgid "Information!"
 msgid "Self Informations"
-msgstr "Informace!"
+msgstr "Vlastní informace"
 
 #: ../searx/plugins/self_info.py:20
 msgid ""
@@ -235,106 +234,111 @@ msgstr ""
 
 #: ../searx/plugins/answerer/alternative/answerer.py:24
 msgid "The ToS;DR Team"
-msgstr ""
+msgstr "Tým ToS;DR"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
-msgstr ""
+msgstr "Alternativa s ochranou soukromí"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:86
 msgid "Get privacy friendly alternatives from popular services."
 msgstr ""
+"Získejte alternativy oblíbených služeb, které kladou důraz na ochranu "
+"soukromí."
 
 #: ../searx/plugins/answerer/alternative/answerer.py:90
 msgid "Report a bug to the maintainer"
-msgstr ""
+msgstr "Nahlásit chybu správci"
 
 #: ../searx/plugins/answerer/alternative/templates/answer.html:1
 msgid "Privacy friendly alternatives to {service}"
-msgstr ""
+msgstr "Alternativy ke službě {service} šetrné k soukromí"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Ascii Shortcuts"
-msgstr "Zkratka"
+msgstr "Ascii zkratky"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:42
 msgid "Does some Ascii Stuff"
-msgstr ""
+msgstr "Dělá nějaké Ascii věci"
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:96
 msgid "Bitcoin Index"
-msgstr ""
+msgstr "Index Bitcoin"
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:97
 msgid "Get a the bitcoin index via currency or by default via USD, EUR and GBP"
 msgstr ""
+"Získejte index Bitcoin prostřednictvím měny nebo ve výchozím nastavení "
+"prostřednictvím USD, EUR a GBP"
 
 #: ../searx/plugins/answerer/bitcoin/templates/all.html:1
 #: ../searx/plugins/answerer/bitcoin/templates/currency.html:1
 msgid "The current Bitcoin index is"
-msgstr ""
+msgstr "Současný index Bitcoin je"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:79
 msgid "Cheatsheet Index"
-msgstr ""
+msgstr "Rejstřík cheatsheetů"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:80
 msgid "Cheatsheet module to load some awesome modules found around the web."
 msgstr ""
+"Modul cheatsheetů, který načítá úžasné moduly nalezené v různých koutech "
+"webu."
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:1
 msgid "Guitar Cheatsheet"
-msgstr ""
+msgstr "Kytarový cheatheet"
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:24
 msgid "Cheatsheet Images by {source}"
-msgstr ""
+msgstr "Obrázky cheatsheetu od {source}"
 
 #: ../searx/plugins/answerer/grade/answerer.py:82
 msgid "{service} has a Privacy {grade} on ToS;DR"
-msgstr ""
+msgstr "Služba {service} má známku {grade} na ToS;DR"
 
 #: ../searx/plugins/answerer/grade/answerer.py:116
 msgid "ToS;DR Grade"
-msgstr ""
+msgstr "Známka ToS;DR"
 
 #: ../searx/plugins/answerer/grade/answerer.py:117
 msgid "Get a grade from ToS;DR using the ToS;DR API"
-msgstr ""
+msgstr "Získejte známku z ToS;DR pomocí ToS;DR API"
 
 #: ../searx/plugins/answerer/hash/answerer.py:69
 msgid "Hash Generator"
-msgstr ""
+msgstr "Generátor hashů"
 
 #: ../searx/plugins/answerer/hash/answerer.py:70
 msgid "Generate md4, md5, sha1, sha256 and sha512 hashes"
-msgstr ""
+msgstr "Generujte hashe md4, md5, sha1, sha256 a sha512"
 
 #: ../searx/plugins/answerer/leetspeak/answerer.py:64
 msgid "Leetspeak Answerer"
-msgstr ""
+msgstr "Odpovídač Leetspeak"
 
 #: ../searx/plugins/answerer/leetspeak/answerer.py:65
+#, fuzzy
 msgid "L 3 3 '][' 5 |D 3 /-\\ |< I 5 C 0 0 |_"
-msgstr ""
+msgstr "L 3 3 '][' 5 |D 3 /-\\ |< I 5 C 0 0 |_"
 
 #: ../searx/plugins/answerer/nato/answerer.py:66
 msgid "Nato Converter"
-msgstr ""
+msgstr "Převodník Nato"
 
 #: ../searx/plugins/answerer/nato/answerer.py:67
 msgid "Converts words into the nato phonetic alphabet"
-msgstr ""
+msgstr "Převádí slova do fonetické abecedy Nato"
 
 #: ../searx/plugins/answerer/onion/answerer.py:40
 msgid "Onion Notice"
-msgstr ""
+msgstr "Oznámení Onion"
 
 #: ../searx/plugins/answerer/onion/answerer.py:41
 msgid "Give a notice if an onion address has been queried"
-msgstr ""
+msgstr "Pošle oznámení, pokud byla dotazována adresa onion"
 
 #: ../searx/plugins/answerer/random/answerer.py:94
 msgid "Random value generator"
@@ -351,7 +355,7 @@ msgstr "Stránka nenalezena"
 #: ../searx/templates/oscar/404.html:6
 #, python-format
 msgid "Go to %(search_page)s."
-msgstr "Přejít na %(search_page)s"
+msgstr "Přejít na %(search_page)s."
 
 #: ../searx/templates/oscar/404.html:6
 msgid "search page"
@@ -379,11 +383,11 @@ msgstr "Chyba!"
 
 #: ../searx/templates/oscar/base.html:107
 msgid "Powered by {searx} and forked by {tosdr}"
-msgstr ""
+msgstr "Běží na forku {searx} od {tosdr}"
 
 #: ../searx/templates/oscar/base.html:108
 msgid "{version} on commit {hash}"
-msgstr ""
+msgstr "{version} commit {hash}"
 
 #: ../searx/templates/oscar/base.html:109
 msgid "a privacy-respecting, hackable metasearch engine"
@@ -399,11 +403,11 @@ msgstr "Hlášení chyb"
 
 #: ../searx/templates/oscar/base.html:113
 msgid "Contact instance maintainer"
-msgstr ""
+msgstr "Kontaktovat správce instance"
 
 #: ../searx/templates/oscar/base.html:115
 msgid "Translate ToS;DR Search"
-msgstr ""
+msgstr "Přeložit ToS;DR Search"
 
 #: ../searx/templates/oscar/languages.html:2
 msgid "Language"
@@ -456,7 +460,7 @@ msgstr "nastavení"
 
 #: ../searx/templates/oscar/preferences.html:12
 msgid "No HTTPS"
-msgstr ""
+msgstr "Bez HTTPS"
 
 #: ../searx/templates/oscar/preferences.html:21
 msgid "Preferences"
@@ -605,14 +609,13 @@ msgid "Off"
 msgstr "Vypnuto"
 
 #: ../searx/templates/oscar/preferences.html:177
-#, fuzzy
-#| msgid "Advanced settings"
 msgid "Show advanced settings"
-msgstr "Pokročilá nastavení"
+msgstr "Zobrazit pokročilá nastavení"
 
 #: ../searx/templates/oscar/preferences.html:178
 msgid "Show advanced settings panel in the home page by default"
 msgstr ""
+"Zobrazit na hlavní stránce ve výchozím nastavení panel pokročilých nastavení"
 
 #: ../searx/templates/oscar/preferences.html:190
 msgid "Open Access DOI resolver"
@@ -688,7 +691,7 @@ msgstr "Název"
 #: ../searx/templates/oscar/results.html:204
 #: ../searx/templates/oscar/results.html:209
 msgid "Developer"
-msgstr ""
+msgstr "Vývojář"
 
 #: ../searx/templates/oscar/preferences.html:368
 msgid "Description"
@@ -790,11 +793,9 @@ msgstr "Zkuste vyhledat:"
 
 #: ../searx/templates/oscar/results.html:159
 msgid "No Description provided by the developer"
-msgstr ""
+msgstr "Vývojářem nebyl poskytnut žádný popis"
 
 #: ../searx/templates/oscar/results.html:166
-#, fuzzy
-#| msgid "Issue tracker"
 msgid "Issue Tracker"
 msgstr "Hlášení chyb"
 
@@ -803,16 +804,18 @@ msgid ""
 "Source\n"
 "                                                        Code"
 msgstr ""
+"Zdrojový\n"
+"                                                        Kód"
 
 #: ../searx/templates/oscar/results.html:183
 msgid "Website"
-msgstr ""
+msgstr "Web"
 
 #: ../searx/templates/oscar/results.html:253
 #: ../searx/templates/oscar/results.html:283
 #: ../searx/templates/oscar/results.html:296
 msgid "Missing Text"
-msgstr ""
+msgstr "Chybějící text"
 
 #: ../searx/templates/oscar/results.html:333
 #: ../searx/templates/oscar/results.html:367
@@ -874,7 +877,7 @@ msgstr "Rok"
 #: ../searx/templates/oscar/messages/first_time.html:6
 #: ../searx/templates/oscar/messages/no_data_available.html:3
 msgid "Heads up!"
-msgstr "Jen krátká informace."
+msgstr "Jen krátká informace!"
 
 #: ../searx/templates/oscar/messages/first_time.html:7
 msgid "It look like you are using searx first time."
@@ -890,7 +893,7 @@ msgstr "aktuálně nejsou definované žádné cookies."
 
 #: ../searx/templates/oscar/messages/no_data_available.html:4
 msgid "There is currently no data available. "
-msgstr "Aktuálně nejsou k dispozici žádná data."
+msgstr "Aktuálně nejsou k dispozici žádná data. "
 
 #: ../searx/templates/oscar/messages/no_results.html:4
 msgid "Engines cannot retrieve results."
@@ -949,10 +952,8 @@ msgid "Author"
 msgstr "Autor"
 
 #: ../searx/templates/oscar/result_templates/files.html:35
-#, fuzzy
-#| msgid "Engine name"
 msgid "Filename"
-msgstr "Jméno vyhledávače"
+msgstr "Název souboru"
 
 #: ../searx/templates/oscar/result_templates/files.html:37
 #: ../searx/templates/oscar/result_templates/torrent.html:7
@@ -986,11 +987,11 @@ msgstr "TiB"
 
 #: ../searx/templates/oscar/result_templates/files.html:46
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: ../searx/templates/oscar/result_templates/files.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: ../searx/templates/oscar/result_templates/images.html:27
 msgid "Get image"
