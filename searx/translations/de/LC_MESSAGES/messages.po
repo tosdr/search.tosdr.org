@@ -24,13 +24,14 @@
 # Justin Back <justin@tosdr.org>, 2021.
 # Mark <thedepresseryt@gmail.com>, 2021.
 # Arne Hilbig <666arnehilbig@gmail.com>, 2022.
+# schmuvius <schmuvius@proton.me>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2022-04-10 21:11+0000\n"
-"Last-Translator: Arne Hilbig <666arnehilbig@gmail.com>\n"
+"PO-Revision-Date: 2022-08-18 13:13+0000\n"
+"Last-Translator: schmuvius <schmuvius@proton.me>\n"
 "Language-Team: German <https://translate.tosdr.org/projects/tosdr-search/"
 "main/de/>\n"
 "Language: de\n"
@@ -1010,7 +1011,7 @@ msgstr "Typ"
 
 #: ../searx/templates/oscar/result_templates/images.html:27
 msgid "Get image"
-msgstr "Bild ansehen"
+msgstr "Bild bekommen"
 
 #: ../searx/templates/oscar/result_templates/images.html:30
 msgid "View source"
