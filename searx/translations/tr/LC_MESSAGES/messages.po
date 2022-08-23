@@ -7,21 +7,23 @@
 # BouRock, 2020
 # Caner Başaran <basaran.caner@gmail.com>, 2014-2016
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014
+# Abdullah Koyuncu <wisewebworks+tosdr@outlook.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2020-09-30 20:20+0000\n"
-"Last-Translator: BouRock\n"
-"Language-Team: Turkish (http://www.transifex.com/asciimoo/searx/language/"
-"tr/)\n"
+"PO-Revision-Date: 2022-08-25 00:13+0000\n"
+"Last-Translator: Abdullah Koyuncu <wisewebworks+tosdr@outlook.com>\n"
+"Language-Team: Turkish <https://translate.tosdr.org/projects/tosdr-search/"
+"main/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 4.5.1\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../searx/webapp.py:164
 msgid "files"
@@ -45,7 +47,7 @@ msgstr "görseller"
 
 #: ../searx/webapp.py:169
 msgid "videos"
-msgstr "görüntüler"
+msgstr "videolar"
 
 #: ../searx/webapp.py:170
 msgid "it"
@@ -61,7 +63,7 @@ msgstr "harita"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr ""
+msgstr "onion/TOR"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -69,19 +71,19 @@ msgstr "bilim"
 
 #: ../searx/webapp.py:375
 msgid "could not load data"
-msgstr ""
+msgstr "veri yüklenemiyor"
 
 #: ../searx/webapp.py:377
 msgid "No item found"
-msgstr "Bulunan öğe yok"
+msgstr "Öğe bulunamadı"
 
 #: ../searx/webapp.py:483 ../searx/webapp.py:848
 msgid "Invalid settings, please edit your preferences"
-msgstr "Geçersiz ayarlar, lütfen tercihlerinizi düzenleyin"
+msgstr "Ayarlar geçersiz, lütfen tercihlerinizi düzenleyin"
 
 #: ../searx/webapp.py:499
 msgid "Invalid settings"
-msgstr "Geçersiz ayarlar"
+msgstr "Ayarlar geçersiz"
 
 #: ../searx/webapp.py:564 ../searx/webapp.py:629
 msgid "search error"
@@ -101,15 +103,15 @@ msgstr "İstatistik işlevleri"
 
 #: ../searx/answerers/statistics/answerer.py:55
 msgid "Compute {functions} of the arguments"
-msgstr "Bağımsız değişkenlerin {functions} değerini hesapla"
+msgstr "Bağımsız değişken {functions} değerlerini hesapla"
 
 #: ../searx/engines/__init__.py:251
 msgid "Engine time (sec)"
-msgstr "Motor süresi (san)"
+msgstr "Motor süresi (saniye)"
 
 #: ../searx/engines/__init__.py:255
 msgid "Page loads (sec)"
-msgstr "Sayfa yüklemeleri (san)"
+msgstr "Sayfa yüklemeleri (saniye)"
 
 #: ../searx/engines/__init__.py:259 ../searx/templates/oscar/results.html:34
 msgid "Number of results"
@@ -117,7 +119,7 @@ msgstr "Sonuç sayısı"
 
 #: ../searx/engines/__init__.py:263
 msgid "Scores"
-msgstr "Skor"
+msgstr "Skorlar"
 
 #: ../searx/engines/__init__.py:267
 msgid "Scores per result"
@@ -129,7 +131,7 @@ msgstr "Hatalar"
 
 #: ../searx/engines/openstreetmap.py:49
 msgid "Get directions"
-msgstr "Yönleri al"
+msgstr "Yol tarifi al"
 
 #: ../searx/engines/pdbe.py:90
 msgid "{title} (OBSOLETE)"
@@ -137,25 +139,23 @@ msgstr "{title} (ESKİ)"
 
 #: ../searx/engines/pdbe.py:97
 msgid "This entry has been superseded by"
-msgstr "Bu girişin yerini alan"
+msgstr "Bu girişin yerini aldı"
 
 #: ../searx/engines/pubmed.py:78
 msgid "No abstract is available for this publication."
-msgstr "Bu yayın için özet mevcut değil."
+msgstr "Bu yayın için özet mevcut değildir."
 
 #: ../searx/plugins/better_answerer.py:9
-#, fuzzy
-#| msgid "Answerers"
 msgid "Better Answerers"
-msgstr "Yanıtlayanlar"
+msgstr "Daha İyi Cevaplayanlar"
 
 #: ../searx/plugins/better_answerer.py:10
 msgid "Module to improve the Answerer functionality in searx"
-msgstr ""
+msgstr "Searx'ta Yanıtlayıcı işlevini geliştirmek için modül"
 
 #: ../searx/plugins/hostname_replace.py:7
 msgid "Hostname replace"
-msgstr ""
+msgstr "Ana bilgisayar adını değiştir"
 
 #: ../searx/plugins/hostname_replace.py:8
 msgid "Rewrite result hostnames"
