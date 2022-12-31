@@ -5,23 +5,25 @@
 # Translators:
 # Artur <artur@komoter.pl>, 2017
 # Artur <artur@komoter.pl>, 2017
+# Dominik Łakomy <groznybx@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-18 02:49+0200\n"
-"PO-Revision-Date: 2017-11-20 13:39+0000\n"
-"Last-Translator: Artur <artur@komoter.pl>\n"
-"Language-Team: Polish (Poland) (http://www.transifex.com/asciimoo/searx/"
-"language/pl_PL/)\n"
-"Language: pl_PL\n"
+"PO-Revision-Date: 2023-01-01 14:37+0000\n"
+"Last-Translator: Dominik Łakomy <groznybx@gmail.com>\n"
+"Language-Team: Polish <https://translate.tosdr.org/projects/tosdr-search/"
+"main/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 4.14.2\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: ../searx/webapp.py:164
 msgid "files"
@@ -61,7 +63,7 @@ msgstr "mapa"
 
 #: ../searx/webapp.py:173
 msgid "onions"
-msgstr ""
+msgstr "oniony"
 
 #: ../searx/webapp.py:174
 msgid "science"
@@ -69,7 +71,7 @@ msgstr "nauka"
 
 #: ../searx/webapp.py:375
 msgid "could not load data"
-msgstr ""
+msgstr "nie można załadować danych"
 
 #: ../searx/webapp.py:377
 msgid "No item found"
@@ -129,13 +131,11 @@ msgstr "Błędy"
 
 #: ../searx/engines/openstreetmap.py:49
 msgid "Get directions"
-msgstr ""
+msgstr "Uzyskaj wskazówki"
 
 #: ../searx/engines/pdbe.py:90
-#, fuzzy
-#| msgid "{title}&nbsp;(OBSOLETE)"
 msgid "{title} (OBSOLETE)"
-msgstr "{title}&nbsp;(PRZESTARZAŁE)"
+msgstr "{title}(PRZESTARZAŁE)"
 
 #: ../searx/engines/pdbe.py:97
 msgid "This entry has been superseded by"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../searx/plugins/hostname_replace.py:7
 msgid "Hostname replace"
-msgstr ""
+msgstr "Zastąp nazwę hosta"
 
 #: ../searx/plugins/hostname_replace.py:8
 msgid "Rewrite result hostnames"
@@ -202,10 +202,8 @@ msgstr ""
 "wiele kategorii. (Wymagany Javascript)"
 
 #: ../searx/plugins/self_info.py:19
-#, fuzzy
-#| msgid "Information!"
 msgid "Self Informations"
-msgstr "Informacja!"
+msgstr "Informacje własne"
 
 #: ../searx/plugins/self_info.py:20
 msgid ""
@@ -238,29 +236,27 @@ msgstr ""
 
 #: ../searx/plugins/answerer/alternative/answerer.py:24
 msgid "The ToS;DR Team"
-msgstr ""
+msgstr "Zespół ToS;DR"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:85
 msgid "Privacy Alternative"
-msgstr ""
+msgstr "Alternatywa prywatności"
 
 #: ../searx/plugins/answerer/alternative/answerer.py:86
 msgid "Get privacy friendly alternatives from popular services."
-msgstr ""
+msgstr "Uzyskaj przyjazne dla prywatności alternatywy z popularnych usług."
 
 #: ../searx/plugins/answerer/alternative/answerer.py:90
 msgid "Report a bug to the maintainer"
-msgstr ""
+msgstr "Zgłoś błąd administratorowi"
 
 #: ../searx/plugins/answerer/alternative/templates/answer.html:1
 msgid "Privacy friendly alternatives to {service}"
-msgstr ""
+msgstr "Przyjazne dla prywatności alternatywy dla {service}"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:41
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Ascii Shortcuts"
-msgstr "Skrót"
+msgstr "Skróty Ascii"
 
 #: ../searx/plugins/answerer/ascii/answerer.py:42
 msgid "Does some Ascii Stuff"
@@ -268,28 +264,31 @@ msgstr ""
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:96
 msgid "Bitcoin Index"
-msgstr ""
+msgstr "Indeks Bitcoina"
 
 #: ../searx/plugins/answerer/bitcoin/answerer.py:97
 msgid "Get a the bitcoin index via currency or by default via USD, EUR and GBP"
 msgstr ""
+"Uzyskaj indeks bitcoin za pośrednictwem waluty lub domyślnie za "
+"pośrednictwem USD, EUR i GBP"
 
 #: ../searx/plugins/answerer/bitcoin/templates/all.html:1
 #: ../searx/plugins/answerer/bitcoin/templates/currency.html:1
 msgid "The current Bitcoin index is"
-msgstr ""
+msgstr "Aktualny indeks Bitcoina to"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:79
 msgid "Cheatsheet Index"
-msgstr ""
+msgstr "Indeks ściągawek"
 
 #: ../searx/plugins/answerer/cheatsheets/answerer.py:80
 msgid "Cheatsheet module to load some awesome modules found around the web."
 msgstr ""
+"Moduł ściągawki do ładowania niesamowitych modułów znalezionych w sieci."
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:1
 msgid "Guitar Cheatsheet"
-msgstr ""
+msgstr "Ściągawka na gitarę"
 
 #: ../searx/plugins/answerer/cheatsheets/modules/guitar/templates/all.html:24
 msgid "Cheatsheet Images by {source}"
@@ -305,11 +304,11 @@ msgstr ""
 
 #: ../searx/plugins/answerer/grade/answerer.py:117
 msgid "Get a grade from ToS;DR using the ToS;DR API"
-msgstr ""
+msgstr "Uzyskaj ocenę od ToS;DR za pomocą interfejsu API ToS;DR"
 
 #: ../searx/plugins/answerer/hash/answerer.py:69
 msgid "Hash Generator"
-msgstr ""
+msgstr "Generator Hash"
 
 #: ../searx/plugins/answerer/hash/answerer.py:70
 msgid "Generate md4, md5, sha1, sha256 and sha512 hashes"
@@ -325,11 +324,11 @@ msgstr ""
 
 #: ../searx/plugins/answerer/nato/answerer.py:66
 msgid "Nato Converter"
-msgstr ""
+msgstr "Konwerter Nato"
 
 #: ../searx/plugins/answerer/nato/answerer.py:67
 msgid "Converts words into the nato phonetic alphabet"
-msgstr ""
+msgstr "Konwertuje słowa na alfabet fonetyczny nato"
 
 #: ../searx/plugins/answerer/onion/answerer.py:40
 msgid "Onion Notice"
@@ -382,11 +381,11 @@ msgstr "Błąd!"
 
 #: ../searx/templates/oscar/base.html:107
 msgid "Powered by {searx} and forked by {tosdr}"
-msgstr ""
+msgstr "Dostarczany przez {searx} i sforkowany przez {tosdr}"
 
 #: ../searx/templates/oscar/base.html:108
 msgid "{version} on commit {hash}"
-msgstr ""
+msgstr "{version} przy zatwierdzeniu {hash}"
 
 #: ../searx/templates/oscar/base.html:109
 msgid "a privacy-respecting, hackable metasearch engine"
@@ -394,25 +393,23 @@ msgstr "szanująca prywatność, hackowalna wyszukiwarka metasearch"
 
 #: ../searx/templates/oscar/base.html:110
 msgid "Source code"
-msgstr ""
+msgstr "Kod źródłowy"
 
 #: ../searx/templates/oscar/base.html:111
 msgid "Issue tracker"
-msgstr ""
+msgstr "Lista problemów"
 
 #: ../searx/templates/oscar/base.html:113
 msgid "Contact instance maintainer"
-msgstr ""
+msgstr "Skontaktuj się z opiekunem instancji"
 
 #: ../searx/templates/oscar/base.html:115
 msgid "Translate ToS;DR Search"
 msgstr ""
 
 #: ../searx/templates/oscar/languages.html:2
-#, fuzzy
-#| msgid "Search language"
 msgid "Language"
-msgstr "Język wyszukiwania"
+msgstr "Język"
 
 #: ../searx/templates/oscar/languages.html:4
 msgid "Default language"
@@ -461,7 +458,7 @@ msgstr "preferencje"
 
 #: ../searx/templates/oscar/preferences.html:12
 msgid "No HTTPS"
-msgstr ""
+msgstr "Brak HTTPS"
 
 #: ../searx/templates/oscar/preferences.html:21
 msgid "Preferences"
